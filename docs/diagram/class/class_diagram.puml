@@ -1,0 +1,48 @@
+@startuml
+  User o-- "User has Contacts" Contact
+  Booking ..> "Booking depends on CarOrHotel" CarOrHotel
+  User -- "User is associated with Booking" Booking
+  CarOrHotel ..> "CarOrHotel depends on CarOrHotelStatus" CarOrHotelStatus
+  
+  class Contact {
+      emailAddress: String
+      phoneNumber: String
+      fullName: String
+      socialName: String
+      address: String
+  }
+
+  class User {
+      username: String
+      birthDate: Date
+      contacts: List<Contact>
+  }
+
+  class Booking {
+      startDatetime: Datetime
+      finalDatetime: Datetime
+      isExtended: Boolean
+      isConfirmed: Boolean
+      bookedX: CarOrHotel
+      bookedTo: User
+
+      boolean confirmBooking()
+      boolean cancelBooking()
+      boolean extendBooking()
+      Datetime bookedUntil()
+      User bookedBy()
+  }
+
+  enum CarOrHotelStatus {
+    free
+    booked
+    under_maintenance
+  }
+
+  class CarOrHotel {
+    label: String
+    status: CarOrHotelStatus
+    rooms: Integer
+    size: Float
+  }
+@enduml

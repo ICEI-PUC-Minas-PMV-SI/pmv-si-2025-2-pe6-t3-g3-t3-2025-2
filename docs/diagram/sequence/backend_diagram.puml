@@ -1,0 +1,37 @@
+@startuml
+  participant Frontend
+
+  group 200 OK
+    Frontend -> BackendService: booking API call
+      activate BackendService
+    BackendService -> BookingService : instantiate Booking object
+      activate BookingService
+    BookingService -> BookingService : checks for availability
+    BackendService <- BookingService
+      deactivate BookingService
+    Frontend <- BackendService
+      deactivate BackendService
+  end
+
+  group 300-500 ERROR
+    Frontend -> BackendService: booking API call
+      activate BackendService
+    BackendService -[#red]> BackendService : failed callout
+    BackendService --[#red]> Frontend : failed callout
+      deactivate BackendService
+    
+    Frontend -> BackendService : instantiate Booking object
+      activate BackendService
+    BackendService -> BookingService : booking API call
+      activate BookingService
+    BookingService -[#red]> BookingService : instantiate Booking object
+    BookingService --[#red]> BackendService : Booking error
+      deactivate BookingService
+    BackendService --[#red]> Frontend : Booking error
+      deactivate BackendService
+  end
+
+  note right of BookingService
+    BookingService will have its own diagram
+  end note
+@enduml

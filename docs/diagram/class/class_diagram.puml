@@ -1,8 +1,17 @@
 @startuml
-  User o-- "User has Contacts" Contact
-  Booking ..> "Booking depends on CarOrHotel" CarOrHotel
-  User -- "User is associated with Booking" Booking
-  CarOrHotel ..> "CarOrHotel depends on CarOrHotelStatus" CarOrHotelStatus
+  User o-- Contact : User has Contacts
+  User o-- UserType : User has UserType
+  Booking ..> HotelRoom : Booking depends on HotelRoom
+  User -- Booking : User is associated with Booking
+  
+  Hotel o-- HotelRoom : has
+  HotelRoom --> Hotel : belongsTo
+  HotelRoom ..>  HotelRoomStatus : HotelRoom depends on HotelRoomStatus
+  HotelRoom ..> RoomType
+  
+  User o-- Payment
+  Payment ..> PaymentType
+  Booking -- BookingResult
   
   class Contact {
       emailAddress: String
@@ -13,9 +22,26 @@
   }
 
   class User {
+      type: UserType
       username: String
       birthDate: Date
       contacts: List<Contact>
+      paymentMethods: List<Payment>
+  }
+
+  enum UserType {
+    customer
+    staff
+    sysadmin
+  }
+  class Payment {
+      type: PaymentType
+  }
+
+  enum PaymentType {
+    creditCard
+    bankTransfer
+    cash
   }
 
   class Booking {
@@ -23,26 +49,43 @@
       finalDatetime: Datetime
       isExtended: Boolean
       isConfirmed: Boolean
-      bookedX: CarOrHotel
-      bookedTo: User
+      room: HotelRoom
+      user: User
 
-      boolean confirmBooking()
+      BookingResult confirmBooking()
       boolean cancelBooking()
       boolean extendBooking()
       Datetime bookedUntil()
       User bookedBy()
   }
 
-  enum CarOrHotelStatus {
+  class BookingResult {
+    isSuccess: Boolean
+    statusCode: String
+    message: String
+  }
+
+  class Hotel {
+    name: String
+    address: String
+    phoneNumber: String
+    rooms: List<HotelRoom>
+  }
+
+  class HotelRoom {
+    roomCode: String
+    type: RoomType
+    status: HotelRoomStatus
+    size: Float
+  }
+  enum RoomType {
+    standard
+    deluxe
+    suite
+  }
+  enum HotelRoomStatus {
     free
     booked
     under_maintenance
-  }
-
-  class CarOrHotel {
-    label: String
-    status: CarOrHotelStatus
-    rooms: Integer
-    size: Float
   }
 @enduml

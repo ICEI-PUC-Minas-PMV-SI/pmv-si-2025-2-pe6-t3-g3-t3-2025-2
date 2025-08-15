@@ -17,14 +17,13 @@
     
     CarOrHotel --> User : returns available Asset
       deactivate CarOrHotel
-    User --> BookingService : returns successful Booking simulation
+    User --> BookingService : returns successful Booking
       deactivate User
     BookingService --> BookingService : process pricing
-    BookingService --> Backend : location, pricing payload
+    BookingService --> Backend : returns location & pricing payload
       deactivate BookingService
   end
-
-  group 300-500 ERROR
+  group 300-500 ERROR: business rule error
     Backend -> BookingService : passing context payload
       activate BookingService
     
@@ -32,8 +31,16 @@
       activate User
     User -[#red]-> User : check User business rules
     User -[#red]-> BookingService : User business rules ERROR
-    BookingService -[#red]-> Backend : User business rules ERROR
+      deactivate User
+    BookingService -[#red]-> Backend : 4## ERROR
+      deactivate BookingService
+  end
 
+  group 300-500 ERROR
+    Backend -> BookingService : passing context payload
+      activate BookingService
+    BookingService -> User : instantiates Booking object
+      activate User
     User -> CarOrHotel : checks Asset to book
       activate CarOrHotel
     CarOrHotel -> CarOrHotel  : checks status
@@ -42,7 +49,7 @@
       deactivate CarOrHotel
     User -[#red]-> BookingService : Asset booking ERROR
       deactivate User
-    BookingService -[#red]-> Backend : Asset booking ERROR
+    BookingService -[#red]-> Backend : 4## ERROR
       deactivate BookingService
   end
 @enduml

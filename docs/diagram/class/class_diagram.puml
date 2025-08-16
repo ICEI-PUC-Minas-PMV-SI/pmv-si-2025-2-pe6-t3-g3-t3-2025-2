@@ -8,6 +8,7 @@
   HotelRoom --> Hotel : belongsTo
   HotelRoom ..>  HotelRoomStatus : HotelRoom depends on HotelRoomStatus
   HotelRoom ..> RoomType
+  Bed ..> HotelRoom
   
   User o-- Payment
   Payment ..> PaymentType
@@ -67,8 +68,7 @@
 
   class Hotel {
     name: String
-    address: String
-    phoneNumber: String
+    contact: Contact
     rooms: List<HotelRoom>
   }
 
@@ -77,7 +77,13 @@
     type: RoomType
     status: HotelRoomStatus
     size: Float
+    beds: Bed
   }
+
+  class Bed {
+    type: BedType
+  }
+
   enum RoomType {
     standard
     deluxe

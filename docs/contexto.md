@@ -1,6 +1,6 @@
 # Introdução
 
-_Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto._
+~~Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.~~
 
 Gerenciar um hotel de forma eficiente requer um controle minucioso de informações essenciais, como a disponibilidade dos quartos, as características de cada acomodação, dados dos clientes, métodos de pagamento, períodos de estadia e o status das reservas. No entanto, muitos estabelecimentos ainda fazem isso manualmente ou com ferramentas limitadas, o que pode levar a problemas operacionais, como reservas duplicadas, falta de informações atualizadas e dificuldades na organização do fluxo de hóspedes.
 
@@ -9,16 +9,22 @@ Esses desafios não só afetam o funcionamento do hotel, mas também a experiên
 Diante desse cenário, é fundamental propor uma solução tecnológica que otimize e centralize essas informações, garantindo uma administração mais eficiente do hotel e uma experiência mais agradável para os hóspedes. O público-alvo deste projeto inclui gestores e funcionários de hotéis que desejam automatizar seus processos internos, além de clientes que buscam um sistema confiável para reservas e hospedagens.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+~~Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.~~
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+~~Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.~~
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+~~Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.~~
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+~~> **Links Úteis**:~~
+~~> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)~~
+~~> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)~~
+~~> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)~~
+
+O principal desafio que se destaca é a dificuldade em gerenciar de forma integrada as informações nos hotéis, resultado do uso de métodos manuais ou sistemas que não são muito eficazes. Essa falta de organização prejudica o controle sobre a disponibilidade dos quartos, a precisão nas reservas, o acompanhamento das entradas e saídas dos hóspedes, além de dificultar a atualização sobre pagamentos e serviços utilizados.
+
+Como resultado, podem surgir erros operacionais, como reservas duplicadas, atrasos no atendimento, perda de dados dos clientes e falhas na comunicação entre os setores do hotel. Isso acaba gerando insatisfação entre os hóspedes e prejuízos para o negócio, já que diminui a eficiência administrativa e pode levar à perda de oportunidades financeiras. 
+
+Nesse cenário, o grande desafio é criar um sistema de gerenciamento que seja claro, seguro e acessível, permitindo que o hotel controle de maneira unificada todos os dados relacionados a quartos, clientes, estadias e pagamentos.
 
 ## Objetivos
 

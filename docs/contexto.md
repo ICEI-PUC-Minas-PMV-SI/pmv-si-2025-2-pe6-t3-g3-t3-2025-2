@@ -1,6 +1,12 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+_Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto._
+
+Gerenciar um hotel de forma eficiente requer um controle minucioso de informações essenciais, como a disponibilidade dos quartos, as características de cada acomodação, dados dos clientes, métodos de pagamento, períodos de estadia e o status das reservas. No entanto, muitos estabelecimentos ainda fazem isso manualmente ou com ferramentas limitadas, o que pode levar a problemas operacionais, como reservas duplicadas, falta de informações atualizadas e dificuldades na organização do fluxo de hóspedes.
+
+Esses desafios não só afetam o funcionamento do hotel, mas também a experiência do cliente, que espera rapidez, transparência e confiança ao fazer reservas e durante a estadia. Além disso, a desorganização pode prejudicar a tomada de decisões da gestão, dificultando o acompanhamento de indicadores importantes, como a taxa de ocupação, a sazonalidade da demanda e o desempenho financeiro.
+
+Diante desse cenário, é fundamental propor uma solução tecnológica que otimize e centralize essas informações, garantindo uma administração mais eficiente do hotel e uma experiência mais agradável para os hóspedes. O público-alvo deste projeto inclui gestores e funcionários de hotéis que desejam automatizar seus processos internos, além de clientes que buscam um sistema confiável para reservas e hospedagens.
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.

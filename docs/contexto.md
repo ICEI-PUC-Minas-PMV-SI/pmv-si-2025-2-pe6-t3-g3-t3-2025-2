@@ -37,9 +37,11 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+~~Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.~~
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+~~O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.~~
+
+O projeto dá-se principalmente para que haja uma consolidação dos aprendizados e implementação dos conceitos apresentados tanto neste quanto em semestres anteriores, provendo assim uma aplicação estável e segura para utilização. Sendo assim, A principal função do projeto então é facilitar a vida dos usuários que buscam fazer reservas online em um hotel, sendo possível criar a reserva de maneira antecipada e sem surpresas, sejam essas advindas qualquer natureza, como indisponibilidade, taxas abusivas e inconveniências ao longo da estadia.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
@@ -67,15 +69,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O usuário deve ser capaz de fazer a reserva de um (ou mais) quartos | ALTA | 
+|RF-002| O usuário deve ser capaz de fazer o pagamento com um meio de pagamento a sua escolha  | ALTA |
+|RF-003| O usuário deve ser capaz de se cadastrar para utilizar o sistema utilizando seus dados  | ALTA |
+|RF-004| O usuário deve ser capaz de realizar pesquisas por quartos do seu interesse  | ALTA |
+|RF-005| O usuário deve ser capaz de estender e/ou cancelar sua reserva | ALTA |
+|RF-006| O usuário deve ser capaz de filtrar suas buscas  | MÉDIA |
+|RF-007| O usuário deve ser capaz de adicionar múltiplos contatos vinculados à sua conta | BAIXA |
+|RF-008| O usuário deve ser capaz de fazer um review da estadia | BAIXA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móveis nativamente | ALTA | 
+|RNF-002| O sistema deve ser responsivo para ser apresentado da maneira correta por telas com resolução variada | ALTA | 
+|RNF-003| O sistema deve ser seguro para com os dados dos usuários, sejam esses dados sensíveis ou não | ALTA | 
+|RNF-004| O aplicativo móvel nativo deve se apresentar da mesma forma que a versão web | ALTA | 
+|RNF-005| O sistema deve ser hosteado em um ambiente cloud, que permita potênciais surtos de pico de tráfego | MÉDIA | 
+|RNF-006| O sistema deve ser apresentado em ao menos duas linguagens (Portguês e Inglês) | MÉDIA | 
+|RNF-007| O sistema deve ser responsivo para rodar em um dispositivos móveis via navegador | BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 

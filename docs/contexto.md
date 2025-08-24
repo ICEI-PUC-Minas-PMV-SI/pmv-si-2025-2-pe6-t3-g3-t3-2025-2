@@ -68,22 +68,22 @@ Os hóspedes são o principal público-alvo do negócio e possuem variados perfi
 ## Diagramas de personas
 |  Jonathan Santos |
 | --- | 
-![persona1](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2\docs\img\persona1-jonathan.jpg) 
+![persona1](img/persona1-jonathan.jpg) 
 
 | Rômulo Andrade |
 | --- | 
-| ![persona2](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/persona2-romulo.jpg) |
+| ![persona2](img/persona2-romulo.jpg) |
 
 | Madalena Corrêa |
 | --- | 
-![persona3](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/persona3-madalena.jpg)
+![persona3](img/persona3-madalena.jpg)
 
 | Camila Medeiros |
 | --- | 
-![persona4](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2\docs\img\persona4-camila.jpg)
+![persona4](img/persona4-camila.jpg)
 
 ## Mapa de stakeholders
-![mapa-de-stakeholders](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/mapa-stakeholders-hotel.png)
+![mapa-de-stakeholders](img/mapa-stakeholders-hotel.png)
 
 ~~> **Links Úteis**:~~
 ~~> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)~~

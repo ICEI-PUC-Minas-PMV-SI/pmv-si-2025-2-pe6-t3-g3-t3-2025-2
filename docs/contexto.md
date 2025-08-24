@@ -28,12 +28,23 @@ Nesse cenário, o grande desafio é criar um sistema de gerenciamento que seja c
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+~~Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.~~
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+~~Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.~~
+
+Este trabalho tem como objetivo desenvolver uma plataforma que auxilie na otimização do gerenciamenmto de processos no setor de hotelaria, com foco na experiência do cliente, tornando o atnedimento mais eficiente, reduzindo erros, economizando tempo, melhorando a qualidade dos serviços e rentabilidade do negócio.
+
+### Objetivos específicos
+
+Elaborar uma plataforma que permita:
+- Realizar o cadastro de usuário
+- Facilitar a pesquisa de quartos com o uso de filtros
+- Permitir a realização de reservas, com opção de alteração ou cancelamento conforme necessidade do hóspede
+- Permitir pagamentos por diversos meios
+- Possibilitar avaliação do serviço ao final da estadia
+
+~~> **Links Úteis**:~~
+~~> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)~~
 
 ## Justificativa
 
@@ -48,16 +59,37 @@ O projeto dá-se principalmente para que haja uma consolidação dos aprendizado
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+~~Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.~~
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+~~Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.~~
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Os hóspedes são o principal público-alvo do negócio e possuem variados perfis e objetivos durante sua estadia. Os turistas que procuram explorar a cidade e podem utilizar as acomodações somente para descanso, famílias e/ou grupos que além de fazer turismo buscam utilizar as áreas de lazer oferecidas na hospedagem, e pessoas em viagem de trabalho que geralmente têm uma estadia curta mas usufruem dos espaços de coworking nas dependências do hotel. 
+
+## Diagramas de personas
+|  Jonathan Santos |
+| --- | 
+![persona1](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2\docs\img\persona1-jonathan.jpg) 
+
+| Rômulo Andrade |
+| --- | 
+| ![persona2](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/persona2-romulo.jpg) |
+
+| Madalena Corrêa |
+| --- | 
+![persona3](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/persona3-madalena.jpg)
+
+| Camila Medeiros |
+| --- | 
+![persona4](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2\docs\img\persona4-camila.jpg)
+
+## Mapa de stakeholders
+![mapa-de-stakeholders](/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/docs/img/mapa-stakeholders-hotel.png)
+
+~~> **Links Úteis**:~~
+~~> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)~~
+~~> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)~~
+~~> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)~~
+~~> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)~~
 
 # Especificações do Projeto
 

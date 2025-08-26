@@ -115,11 +115,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móveis nativamente | ALTA | 
 |RNF-002| O sistema deve ser responsivo para ser apresentado da maneira correta por telas com resolução variada | ALTA | 
-|RNF-003| O sistema deve ser seguro para com os dados dos usuários, sejam esses dados sensíveis ou não | ALTA | 
-|RNF-004| O aplicativo móvel nativo deve se apresentar da mesma forma que a versão web | ALTA | 
-|RNF-005| O sistema deve ser hosteado em um ambiente cloud, que permita potênciais surtos de pico de tráfego | MÉDIA | 
-|RNF-006| O sistema deve ser apresentado em ao menos duas linguagens (Portguês e Inglês) | MÉDIA | 
-|RNF-007| O sistema deve ser responsivo para rodar em um dispositivos móveis via navegador | BAIXA | 
+|RNF-003| O sistema deve garantir que os usuários tenham acesso apenas aos dados e funcionalidades compatíveis com seu perfil de permissão | ALTA | 
+|RNF-004| O sistema deve implementar autenticação por meio de credenciais (login e senha) com no mínimo 8 caracteres, com combinação mínima de números e caracteres especiais | ALTA |
+|RNF-005| Dados sensíveis (como senhas, informações pessoais identificáveis, etc) devem ser armazenados de forma criptografada utilizando algoritmos como AES-256 | ALTA |
+|RNF-006| O aplicativo móvel nativo deve se apresentar da mesma forma que a versão web | ALTA | 
+|RNF-007| O sistema deve ser hosteado em um ambiente cloud, que permita potênciais surtos de pico de tráfego | MÉDIA | 
+|RNF-008| O sistema deve ser apresentado em ao menos duas linguagens (Português e Inglês) | MÉDIA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 

@@ -20,11 +20,9 @@ Este projeto se insere nesse contexto, explorando o papel das aplicações distr
 ~~> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)~~
 ~~> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)~~
 
-O principal desafio que se destaca é a dificuldade em gerenciar de forma integrada as informações nos hotéis, resultado do uso de métodos manuais ou sistemas que não são muito eficazes. Essa falta de organização prejudica o controle sobre a disponibilidade dos quartos, a precisão nas reservas, o acompanhamento das entradas e saídas dos hóspedes, além de dificultar a atualização sobre pagamentos e serviços utilizados.
+O setor de hotelaria e turismo vive um momento de intensa transformação digital, no qual a forma de escolher hospedagens foi profundamente modificada. Se antes esse processo ocorria por meio de contato direto com os estabelecimentos ou visitas presenciais, hoje ele se concentra em plataformas digitais que permitem comparar preços, serviços, avaliações e localizações em poucos cliques. Essa mudança trouxe maior praticidade, mas também revelou uma série de desafios que impactam tanto a experiência do cliente quanto a competitividade das empresas do setor.
 
-Como resultado, podem surgir erros operacionais, como reservas duplicadas, atrasos no atendimento, perda de dados dos clientes e falhas na comunicação entre os setores do hotel. Isso acaba gerando insatisfação entre os hóspedes e prejuízos para o negócio, já que diminui a eficiência administrativa e pode levar à perda de oportunidades financeiras. 
-
-Nesse cenário, o grande desafio é criar um sistema de gerenciamento que seja claro, seguro e acessível, permitindo que o hotel controle de maneira unificada todos os dados relacionados a quartos, clientes, estadias e pagamentos.
+O principal obstáculo está na falta de informações confiáveis e atualizadas sobre disponibilidade de quartos e serviços oferecidos. Em muitos casos, os dados apresentados não estão devidamente padronizados ou integrados, o que gera inconsistências, atrasos e até falhas no momento da reserva. Para o cliente, isso significa insegurança e dificuldade em tomar decisões assertivas; para os estabelecimentos, representa perda de oportunidades de atrair e fidelizar hóspedes em um mercado cada vez mais dinâmico e competitivo.
 
 ## Objetivos
 

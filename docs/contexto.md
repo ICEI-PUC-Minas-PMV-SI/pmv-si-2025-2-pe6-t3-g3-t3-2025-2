@@ -2,11 +2,11 @@
 
 ~~Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.~~
 
-Gerenciar um hotel de forma eficiente requer um controle minucioso de informações essenciais, como a disponibilidade dos quartos, as características de cada acomodação, dados dos clientes, métodos de pagamento, períodos de estadia e o status das reservas. No entanto, muitos estabelecimentos ainda fazem isso manualmente ou com ferramentas limitadas, o que pode levar a problemas operacionais, como reservas duplicadas, falta de informações atualizadas e dificuldades na organização do fluxo de hóspedes.
+Viajar e escolher uma hospedagem envolve decisões que vão além da simples disponibilidade de quartos. Informações claras, organizadas e confiáveis sobre acomodações, serviços e localização tornaram-se cada vez mais importantes à medida que o setor de turismo se digitaliza e se torna mais competitivo.
 
-Esses desafios não só afetam o funcionamento do hotel, mas também a experiência do cliente, que espera rapidez, transparência e confiança ao fazer reservas e durante a estadia. Além disso, a desorganização pode prejudicar a tomada de decisões da gestão, dificultando o acompanhamento de indicadores importantes, como a taxa de ocupação, a sazonalidade da demanda e o desempenho financeiro.
+Nesse cenário, os clientes estão cada vez mais bem informados e exigentes, comparando opções, avaliando serviços e buscando experiências que combinem conforto, praticidade e lazer. Atender a essas expectativas exige sistemas capazes de fornecer informações atualizadas e precisas de forma rápida e acessível. As aplicações distribuídas desempenham um papel essencial nesse contexto, permitindo que plataformas digitais escalem para atender simultaneamente múltiplos usuários e estabelecimentos, integrem dados de diferentes fontes e mantenham a disponibilidade e confiabilidade das informações. Dessa forma, elas tornam-se ferramentas estratégicas para conectar clientes e hotéis em um ambiente altamente competitivo e dinâmico, onde a experiência do usuário é um diferencial decisivo.
 
-Diante desse cenário, é fundamental propor uma solução tecnológica que otimize e centralize essas informações, garantindo uma administração mais eficiente do hotel e uma experiência mais agradável para os hóspedes. O público-alvo deste projeto inclui gestores e funcionários de hotéis que desejam automatizar seus processos internos, além de clientes que buscam um sistema confiável para reservas e hospedagens.
+Este projeto se insere nesse contexto, explorando o papel das aplicações distribuídas no setor de hotelaria, com foco na forma como essas tecnologias podem apoiar serviços digitais modernos e melhorar a experiência geral de busca e seleção de hospedagens.
 
 ## Problema
 ~~Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.~~

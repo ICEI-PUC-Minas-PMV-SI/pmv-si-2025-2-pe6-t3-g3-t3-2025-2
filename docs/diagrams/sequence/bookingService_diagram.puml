@@ -2,7 +2,8 @@
   participant Backend
   participant BookingService
   participant User
-  participant CarOrHotel
+  participant HotelRoom
+  participant PaymentService
 
   group 200 OK
     Backend -> BookingService : passing context payload
@@ -10,13 +11,17 @@
     BookingService -> User : instantiates Booking object
       activate User
     User -> User : check User business rules
-    User -> CarOrHotel : checks Asset to book
-      activate CarOrHotel
-    CarOrHotel -> CarOrHotel  : checks status
-    CarOrHotel -> CarOrHotel  : checks availability
+    User -> HotelRoom : checks Asset to book
+      activate HotelRoom
+    HotelRoom -> HotelRoom  : checks status
+    HotelRoom -> HotelRoom  : checks availability
+    HotelRoom -> PaymentService  : process payment
+      activate PaymentService
     
-    CarOrHotel --> User : returns available Asset
-      deactivate CarOrHotel
+    PaymentService --> HotelRoom
+      deactivate PaymentService
+    HotelRoom --> User : returns available Asset
+      deactivate HotelRoom
     User --> BookingService : returns successful Booking
       deactivate User
     BookingService --> BookingService : process pricing
@@ -41,12 +46,17 @@
       activate BookingService
     BookingService -> User : instantiates Booking object
       activate User
-    User -> CarOrHotel : checks Asset to book
-      activate CarOrHotel
-    CarOrHotel -> CarOrHotel  : checks status
-    CarOrHotel -> CarOrHotel  : checks availability
-    CarOrHotel -[#red]-> User : Asset booking ERROR
-      deactivate CarOrHotel
+    User -> HotelRoom : checks Asset to book
+      activate HotelRoom
+    HotelRoom -> HotelRoom  : checks status
+    HotelRoom -> HotelRoom  : checks availability
+    HotelRoom -> PaymentService  : process payment
+      activate PaymentService
+    
+    PaymentService -[#red]-> HotelRoom : possibly payment error
+      deactivate PaymentService
+    HotelRoom -[#red]-> User : Asset booking ERROR
+      deactivate HotelRoom
     User -[#red]-> BookingService : Asset booking ERROR
       deactivate User
     BookingService -[#red]-> Backend : 4## ERROR

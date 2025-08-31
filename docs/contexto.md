@@ -81,7 +81,7 @@ O mapa de stakeholders do sistema de catálogo de hotéis apresenta os principai
 
 A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 
-![Mapa de Stakeholders](/mnt/data/mapa-stakeholders-hotel.png)
+![Mapa de Stakeholders](img/mapa-stakeholders-hotel.png)
 
 
   # Especificações do Projeto

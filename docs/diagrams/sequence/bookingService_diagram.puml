@@ -5,6 +5,7 @@
   participant HotelRoom
   participant PaymentService
 
+
   group 200 OK
     Backend -> BookingService : passing context payload
       activate BookingService

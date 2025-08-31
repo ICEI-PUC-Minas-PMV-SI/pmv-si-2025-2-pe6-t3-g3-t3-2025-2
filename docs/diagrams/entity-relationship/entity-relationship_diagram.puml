@@ -7,6 +7,12 @@
         *password: text (encrypted)
         *type: text
         *birthDate: datetime
+      }
+      
+      entity "Contact" {
+        *contactId: UUID <<PK>>
+        userId: UUID <<FK>>
+        --
         *emailAddress: text
         *phoneNumber: text
         firstName: text
@@ -48,9 +54,9 @@
 
       entity "Hotel" {
         *hotelId: UUID <<PK>>
+        *contactId: UUID <<FK>>
         --
         *name: text
-        *address: text
       }
 
       entity "Room" {
@@ -80,9 +86,10 @@
       }
 
       Payment }|--|| User
+      Contact }|--|| User
       Booking }|--|| User
-      Booking }|--|| Hotel
-      Room }|--|| Hotel
+      Contact }|--|| Hotel
+      Hotel }|--|| Room
       Room }|--|{ RoomProp
       RoomProp }|--|| PropType
       BankTransferPayment ||--|| Payment

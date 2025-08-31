@@ -65,9 +65,24 @@
   | ------------------------------------ |
   | ![persona4](img/persona4-camila.jpg) |
 
-  ## Mapa de stakeholders
+## Mapa de Stakeholders
 
-  ![mapa-de-stakeholders](/home/mfraga/img/mapa-stakeholders-hotel.png)
+O mapa de stakeholders do sistema de catálogo de hotéis apresenta os principais atores envolvidos no processo de escolha de hospedagem e sua relação com o sistema. Ele permite compreender o papel de cada parte interessada, destacando suas necessidades e expectativas.
+
+### Descrição
+
+- **Clientes**: usuários finais que utilizam o catálogo para buscar, comparar e selecionar hotéis.  
+- **Hotéis**: fornecedores de acomodações que disponibilizam informações sobre quartos, tarifas e serviços.  
+- **Plataforma de Catálogo**: sistema responsável por consolidar e apresentar as informações de forma clara e confiável.  
+- **Administradores da Plataforma**: responsáveis pela gestão, atualização e manutenção do catálogo.  
+- **Parceiros Comerciais**: agências de turismo e plataformas de reservas integradas que se beneficiam do catálogo.  
+
+### Representação Gráfica
+
+A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
+
+![Mapa de Stakeholders](/mnt/data/mapa-stakeholders-hotel.png)
+
 
   # Especificações do Projeto
 
@@ -253,33 +268,34 @@
 
 Atualizado em: 31/08/2025
 
-| Responsável                                  | Tarefa/Requisito                          | Iniciado em |   Prazo    | Status | Terminado em |
-| :------------------------------------------- | :---------------------------------------- | :---------: | :--------: | :----: | :----------: |
-| Matheus Fraga, Victor Henrique               | Introdução                                | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes, Matheus Fraga                | Objetivos                                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Victor Henrique, Matheus Fraga               | Problema                                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Justificativa                             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes, Matheus Fraga                | Público-Alvo                              | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes                               | Histórias de usuário                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes                               | Mapa de stakeholders                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade                                 | Diagramas gerais do projeto               | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade                                 | Arquitetura da Solução                    | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga, Victor Henrique | RFs & RNFs                                | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | CI/CD com GitHub Actions                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Criação do banco de dados                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Hospedagem no Azure                       | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Matheus Fraga                                | Revisão final do documento                | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Matheus Fraga                                | Técnica MoSCoW e definição de prioridades | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Matheus Fraga                                | Documentação das tecnologias utilizadas   | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Matheus Fraga                                | Adição de referências ao problema         | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Victor Henrique                              | README.md                                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Responsável                                  | Tarefa/Requisito                              | Iniciado em |   Prazo    | Status | Terminado em |
+| :------------------------------------------- | :-------------------------------------------- | :---------: | :--------: | :----: | :----------: |
+| Matheus Fraga, Victor Henrique               | Introdução                                    | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes, Matheus Fraga                | Objetivos                                     | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Victor Henrique, Matheus Fraga               | Problema                                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Justificativa                                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes, Matheus Fraga                | Público-Alvo                                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes                               | Histórias de usuário                          | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes                               | Mapa de stakeholders                          | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Descrição do mapa de stakeholders             | 31/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade                                 | Diagramas gerais do projeto                   | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade                                 | Arquitetura da Solução                        | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga, Victor Henrique | RFs & RNFs                                    | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | CI/CD com GitHub Actions                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Criação do banco de dados                     | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Hospedagem no Azure                           | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Revisão final do documento                    | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Técnica MoSCoW e definição de prioridades     | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Documentação das tecnologias utilizadas       | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Adição de referências ao problema             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Victor Henrique                              | README.md                                     | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 
 Legenda:
 
 - ✔️: terminado  
 - 📝: em execução  
 - ⌛: atrasado  
-- ❌: não iniciado
+- ❌: não iniciado  
 
 ## Referências
 

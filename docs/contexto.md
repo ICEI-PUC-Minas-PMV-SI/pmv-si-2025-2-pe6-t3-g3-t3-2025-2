@@ -14,20 +14,20 @@ Um dos principais obstáculos é a apresentação de informações desorganizada
 
 Diante desse contexto, torna-se necessário desenvolver soluções digitais capazes de oferecer informações claras, organizadas e confiáveis, que sustentem uma experiência de busca e reserva transparente, segura e agradável para o usuário final.
 
-## Objetivo geral
+## Objetivo Geral
 
 Desenvolver uma plataforma digital para o setor hoteleiro que organize e disponibilize informações de forma clara e confiável, proporcionando uma experiência de reserva segura, eficiente e satisfatória para os clientes, ao mesmo tempo em que reduz erros operacionais e melhora a gestão de processos dos hotéis.
 
-### Objetivos específicos
+### Objetivos Específicos
 
 A plataforma deve permitir:
 
-- Cadastro de usuários de forma simples e segura
-- Pesquisa de quartos utilizando filtros para facilitar a escolha
-- Realização de reservas, com opção de alteração ou cancelamento de acordo com a necessidade do hóspede
-- Pagamentos por diferentes meios de forma segura
-- Avaliação do serviço após a estadia, garantindo feedbacks confiáveis
-- Atualização automática de disponibilidade e informações de quartos, evitando inconsistências e reservas inválidas
+- Cadastro de usuários de forma simples e segura.
+- Pesquisa de quartos utilizando filtros para facilitar a escolha.
+- Realização de reservas, com opção de alteração ou cancelamento de acordo com a necessidade do hóspede.
+- Pagamentos por diferentes meios de forma segura.
+- Avaliação do serviço após a estadia, garantindo feedbacks confiáveis.
+- Atualização automática de disponibilidade e informações de quartos, evitando inconsistências e reservas inválidas.
 
 ## Justificativa
 
@@ -39,148 +39,234 @@ Além de beneficiar os clientes, a solução contribui para a eficiência operac
 
 O principal público-alvo da plataforma são os hóspedes, que apresentam perfis e necessidades distintas durante a estadia. Entre eles estão:
 
-- **Turistas de lazer**, que utilizam o hotel principalmente para descanso enquanto exploram a cidade;
-- **Famílias e grupos**, que buscam tanto acomodações confortáveis quanto áreas de lazer disponíveis no hotel;
+- **Turistas de lazer**, que utilizam o hotel principalmente para descanso enquanto exploram a cidade.
+- **Famílias e grupos**, que buscam tanto acomodações confortáveis quanto áreas de lazer disponíveis no hotel.
 - **Viajantes a trabalho**, que geralmente têm estadias curtas e utilizam espaços de coworking e serviços voltados para produtividade.
 
 A diversidade de perfis reforça a necessidade de uma plataforma que organize informações de forma clara, permita pesquisas personalizadas e ofereça reservas seguras, atendendo de maneira eficiente às expectativas de cada tipo de hóspede.
 
-## Diagramas de personas
-|  Jonathan Santos |
-| --- | 
-![persona1](img/persona1-jonathan.jpg) 
+## Diagramas de Personas
 
-| Rômulo Andrade |
-| --- | 
+| Jonathan Santos                        |
+| -------------------------------------- |
+| ![persona1](img/persona1-jonathan.jpg) |
+
+| Rômulo Andrade                       |
+| ------------------------------------ |
 | ![persona2](img/persona2-romulo.jpg) |
 
-| Madalena Corrêa |
-| --- | 
-![persona3](img/persona3-madalena.jpg)
+| Madalena Corrêa                        |
+| -------------------------------------- |
+| ![persona3](img/persona3-madalena.jpg) |
 
-| Camila Medeiros |
-| --- | 
-![persona4](img/persona4-camila.jpg)
+| Camila Medeiros                      |
+| ------------------------------------ |
+| ![persona4](img/persona4-camila.jpg) |
 
-## Mapa de stakeholders
+## Mapa de Stakeholders
+
 ![mapa-de-stakeholders](img/mapa-stakeholders-hotel.png)
 
 # Especificações do Projeto
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas a seguir apresentam os **requisitos funcionais (RFs)** e **não funcionais (RNFs)** que detalham o escopo do projeto. Para determinar a prioridade de cada requisito, foi utilizada a **técnica MoSCoW**, que classifica os itens em:
+
+- **M – Must have (Deve ter)** – Essencial para o funcionamento do sistema e cumprimento dos objetivos do projeto.  
+- **S – Should have (Deveria ter)** – Importante, mas pode ser simplificado ou parcialmente implementado na entrega acadêmica.  
+- **C – Could have (Poderia ter)** – Desejável, mas não essencial; pode ser considerado como melhoria futura.  
+
+A aplicação da técnica considerou **impacto no usuário, dependência técnica e viabilidade de implementação** dentro do prazo acadêmico.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| O usuário deve ser capaz de fazer a reserva de um (ou mais) quartos | ALTA | 
-|RF-002| O usuário deve ser capaz de fazer o pagamento com um meio de pagamento a sua escolha  | ALTA |
-|RF-003| O usuário deve ser capaz de se cadastrar para utilizar o sistema utilizando seus dados  | ALTA |
-|RF-004| O usuário deve ser capaz de realizar pesquisas por quartos do seu interesse  | ALTA |
-|RF-005| O usuário deve ser capaz de estender e/ou cancelar sua reserva | ALTA |
-|RF-006| O usuário deve ser capaz de filtrar suas buscas  | MÉDIA |
-|RF-008| O usuário deve ser capaz de fazer um review (avaliação) de sua estadia | BAIXA |
-|RF-009| O sistema impor um padrão de complexidade mínimo exigido às senhas (ao menos uma letra maiúscula, um número e um caractere especial) | ALTA |
-|RF-010| O sistema impor uma validade de idade mínima aos usuário durante o cadastro (ao menos 18 anos) | ALTA |
-|RF-011| O sistema validar formatação correta de e-mail e número de celular durante o cadastro | ALTA |
+| ID      | Descrição do requisito                                       | Prioridade | Categoria MoSCoW  | Objetivo relacionado                        |
+| ------- | ------------------------------------------------------------ | ---------- | ----------------- | ------------------------------------------- |
+| RF-001  | Permitir que o usuário realize reservas de um ou mais quartos | Alta       | 🔴 M – Deve ter    | Realização de reservas seguras e eficientes |
+| RF-002  | Integrar meios de pagamento (simulado ou real)               | Alta       | 🔴 M – Deve ter    | Pagamentos seguros e flexíveis              |
+| RF-003  | Facilitar o cadastro de usuários com dados pessoais válidos  | Alta       | 🔴 M – Deve ter    | Cadastro simples e seguro                   |
+| RF-004  | Garantir idade mínima de 18 anos no cadastro                 | Alta       | 🔴 M – Deve ter    | Conformidade legal e segurança              |
+| RF-005  | Validar complexidade mínima de senhas                        | Alta       | 🔴 M – Deve ter    | Segurança do usuário                        |
+| RF-006  | Validar e-mail e número de celular durante o cadastro        | Alta       | 🔴 M – Deve ter    | Garantir dados confiáveis dos usuários      |
+| RF-007a | Permitir pesquisa de quartos e hotéis por nome, cidade ou bairro | Alta       | 🔴 M – Deve ter    | Encontrar rapidamente opções relevantes     |
+| RF-007b | Permitir aplicação de filtros por datas, tipo de acomodação e serviços | Média      | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
+| RF-007c | Permitir ordenação por preço, avaliação, distância ou popularidade | Média      | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
+| RF-008  | Possibilitar alteração ou cancelamento de reservas conforme necessidade | Média      | 🟡 S – Deveria ter | Flexibilidade na gestão de reservas         |
+| RF-009  | Controle de acesso por perfil, assegurando que usuários visualizem apenas dados compatíveis | Alta       | 🔴 M – Deve ter    | Segurança e gestão de permissões            |
+| RF-010  | Exibir informações detalhadas do hotel, incluindo descrição, fotos, serviços, políticas e localização | Média      | 🟢 C – Poderia ter | Tomada de decisão informada pelo usuário    |
+| RF-011  | Permitir avaliação da estadia pelos hóspedes, registrando feedbacks | Baixa      | 🟢 C – Poderia ter | Coleta de feedbacks para melhoria contínua  |
 
+### Requisitos Não Funcionais
 
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis nativamente | ALTA | 
-|RNF-002| O sistema deve ser responsivo para ser apresentado da maneira correta por telas com resolução variada | ALTA | 
-|RNF-003| O sistema deve garantir que os usuários tenham acesso apenas aos dados e funcionalidades compatíveis com seu perfil de permissão | ALTA | 
-|RNF-004| O sistema deve implementar autenticação por meio de credenciais (login e senha) com no mínimo 8 caracteres, com combinação mínima de números e caracteres especiais | ALTA |
-|RNF-005| Dados sensíveis (como senhas, informações pessoais identificáveis, etc) devem ser armazenados de forma criptografada | ALTA |
-|RNF-006| O sistema deve ser hosteado em um ambiente cloud, que permita potênciais surtos de pico de tráfego | MÉDIA | 
-|RNF-007| O sistema deve ser apresentado em ao menos duas linguagens (Português e Inglês) | MÉDIA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID      | Descrição do requisito                                       | Prioridade | Categoria MoSCoW  | Objetivo relacionado                             |
+| ------- | ------------------------------------------------------------ | ---------- | ----------------- | ------------------------------------------------ |
+| RNF-001 | Totalmente responsivo em dispositivos móveis e desktops      | Alta       | 🔴 M – Deve ter    | Experiência do usuário consistente               |
+| RNF-002 | Armazenamento criptografado de dados sensíveis               | Alta       | 🔴 M – Deve ter    | Proteção de informações pessoais                 |
+| RNF-003 | Garantir contraste adequado entre textos e fundos            | Média      | 🟡 S – Deveria ter | Acessibilidade e usabilidade                     |
+| RNF-004 | Hospedagem em ambiente cloud (ou simulação local)            | Média      | 🟡 S – Deveria ter | Confiabilidade e suporte a múltiplos usuários    |
+| RNF-005 | Tempo de resposta máximo de 2 segundos para operações críticas | Média      | 🟡 S – Deveria ter | Performance e experiência do usuário             |
+| RNF-006 | Sistema escalável, suportando aumento de usuários e dados    | Baixa      | 🟢 C – Poderia ter | Continuidade do negócio e crescimento do sistema |
+| RNF-007 | Suporte a pelo menos duas linguagens (Português e Inglês)    | Baixa      | 🟢 C – Poderia ter | Inclusão e acessibilidade global                 |
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| ID   | Restrição                                             |
+| ---- | ----------------------------------------------------- |
+| 01   | O projeto deverá ser entregue até o final do semestre |
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+## 1. Reservas de Quartos
+
+**Descrição:** Permite que os usuários reservem quartos de hotéis de forma rápida e segura.  
+**Funcionalidades:**
+
+- Escolha de hotel e tipo de quarto.
+- Seleção de datas de entrada e saída.
+- Visualização de disponibilidade em tempo real.
+- Confirmação de reserva com resumo detalhado.
+
+## 2. Cadastro e Gerenciamento de Usuários
+
+**Descrição:** Serviço para criação e manutenção de contas de usuários.  
+**Funcionalidades:**
+
+- Cadastro de usuários com informações pessoais válidas.
+- Validação de e-mail e número de celular.
+- Controle de idade mínima (18 anos).
+- Recuperação e alteração de senha.
+
+## 3. Pagamentos e Transações
+
+**Descrição:** Integração com meios de pagamento para garantir transações seguras.  
+**Funcionalidades:**
+
+- Pagamento online (cartão de crédito, débito ou simulação).
+- Confirmação de pagamento instantânea.
+- Histórico de transações para cada usuário.
+
+## 4. Pesquisa e Filtros de Quartos e Hotéis
+
+**Descrição:** Facilita a busca por acomodações de acordo com critérios específicos.  
+**Funcionalidades:**
+
+- Pesquisa por nome, cidade ou bairro.
+- Filtros por tipo de acomodação, datas e serviços oferecidos.
+- Ordenação por preço, avaliação, distância ou popularidade.
+
+## 5. Alteração e Cancelamento de Reservas
+
+**Descrição:** Serviço que permite ao usuário modificar ou cancelar reservas existentes.  
+**Funcionalidades:**
+
+- Alteração de datas ou tipo de quarto (conforme disponibilidade).
+- Cancelamento de reserva com confirmação automática.
+- Atualização do histórico de reservas do usuário.
+
+## 6. Controle de Acesso e Segurança
+
+**Descrição:** Gestão de permissões e proteção de dados.  
+**Funcionalidades:**
+
+- Diferenciação de perfis (usuário, administrador).
+- Restrição de acesso a funcionalidades conforme perfil.
+- Armazenamento criptografado de dados sensíveis.
+
+## 7. Informações Detalhadas sobre Hotéis
+
+**Descrição:** Exibição de dados completos para ajudar na decisão do usuário.  
+**Funcionalidades:**
+
+- Apresentação de descrição, fotos, serviços e políticas do hotel.
+- Localização e informações de contato.
+- Avaliações de clientes anteriores.
+
+## 8. Avaliação e Feedback de Usuários
+
+**Descrição:** Permite que hóspedes registrem opiniões sobre sua estadia.  
+**Funcionalidades:**
+
+- Registro de avaliações e comentários.
+- Exibição de avaliações na página do hotel.
+- Coleta de feedback para melhoria contínua do sistema e serviços.
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+O diagrama de arquitetura abaixo foi desenvolvido com base no **estilo arquitetural baseado em serviços (SOA - Service-Oriented Architecture)**. Esse estilo foi escolhido para garantir:
+
+- **Desacoplamento** entre módulos, facilitando alterações futuras.
+- **Manutenabilidade**, permitindo atualização ou substituição de componentes sem afetar todo o sistema.
+- **Extensibilidade**, possibilitando a inclusão de novos serviços conforme o crescimento do projeto.
+- **Segurança e robustez**, assegurando que os dados dos usuários e transações sejam protegidos.
+- **Experiência do usuário de qualidade**, com respostas rápidas e confiáveis.
 
 ![diagrama de arquitetura](img/diagrams/solution-architecture.svg)
 
+O sistema é dividido em três camadas principais:
+
+1. **Frontend**: Responsável pela interface do usuário, interação e captura de dados.
+2. **Backend**: Processamento das regras de negócio, gerenciamento de reservas, autenticação, pagamentos e serviços relacionados.
+3. **Banco de Dados**: Armazenamento de informações persistentes, incluindo usuários, reservas, hotéis e transações.
 
 ## Tecnologias Utilizadas
 
-Backend: [Fastapi (Python)](https://fastapi.tiangolo.com/)
+**Backend:** [FastAPI](https://fastapi.tiangolo.com/)
 
-Frontend: [React Native + expo)](https://docs.expo.dev/)
+- Framework leve e moderno, com suporte nativo a APIs RESTful.
+- Alta performance e facilidade de integração com bancos de dados e autenticação.
 
-Mock de sistema de pagamento: [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)
+**Frontend:** [React Native + Expo](https://docs.expo.dev/)
+
+- Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.
+- Facilita criação de interfaces responsivas e interativas.
+
+**Mock de sistema de pagamento:** [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)
+
+- Simula endpoints de pagamento para testes de integração.
+- Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
 
 ## Hospedagem
 
-Hospedagem via Azure web apps + database
+O sistema será hospedado utilizando:
+
+- **Azure Web Apps:** Para o deployment do backend e frontend, garantindo **alta disponibilidade e escalabilidade**.
+- **Banco de dados em nuvem (Azure Database):** Para armazenamento seguro e confiável de dados persistentes.
+
+Essa configuração garante que o sistema seja **escalável, confiável e de fácil manutenção**, atendendo tanto às necessidades do projeto acadêmico quanto a uma possível extensão futura.
 
 # Planejamento
 
-##  Quadro de tarefas
+## Quadro de Tarefas
 
 ### Etapa 1
 
 Atualizado em: 31/08/2025
 
-| Responsável                                  | Tarefa/Requisito                      | Iniciado em |   Prazo    | Status | Terminado em |
-| :------------------------------------------- | :------------------------------------ | :---------: | :--------: | :----: | :----------: |
-| Matheus Fraga, Victor Henrique               | Introdução                            | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes, Matheus Fraga                | Objetivos                             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Victor Henrique, Matheus Fraga               | Problema                              | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Justificativa                         | 01/08/2025  | 31/08/2025 |   ✔️    |  05/08/2025  |
-| Sibelle Mendes, Matheus Fraga                | Público-Alvo                          | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes                               | Histórias de usuário                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Sibelle Mendes                               | Mapa de stakeholders                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade                                 | Diagramas gerais do projeto           | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade                                 | Arquitetura da Solução                | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga, Victor Henrique | RFs & RNFs                            | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Solução github action (CI/DC)         | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Criação do banco de dados             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Luiz Andrade, Matheus Fraga                  | Hospedagem Azure                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Victor Henrique                              | README.md                             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Matheus Fraga                                | Revisão final de entrega de documento | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Responsável                                  | Tarefa/Requisito                          | Iniciado em |   Prazo    | Status | Terminado em |
+| :------------------------------------------- | :---------------------------------------- | :---------: | :--------: | :----: | :----------: |
+| Matheus Fraga, Victor Henrique               | Introdução                                | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes, Matheus Fraga                | Objetivos                                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Victor Henrique, Matheus Fraga               | Problema                                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Justificativa                             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes, Matheus Fraga                | Público-Alvo                              | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes                               | Histórias de usuário                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Sibelle Mendes                               | Mapa de stakeholders                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade                                 | Diagramas gerais do projeto               | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade                                 | Arquitetura da Solução                    | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga, Victor Henrique | RFs & RNFs                                | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | CI/CD com GitHub Actions                  | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Criação do banco de dados                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Luiz Andrade, Matheus Fraga                  | Hospedagem no Azure                       | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Revisão final do documento                | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Técnica MoSCoW e definição de prioridades | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Matheus Fraga                                | Documentação das tecnologias utilizadas   | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 
 Legenda:
 
-- ✔️: terminado
-- 📝: em execução
-- ⌛: atrasado
-- ❌: não iniciado
-
+* ✔️: terminado  
+* 📝: em execução  
+* ⌛: atrasado  
+* ❌: não iniciado

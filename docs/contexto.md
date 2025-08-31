@@ -14,7 +14,7 @@ O principal obstáculo está na falta de informações confiáveis e atualizadas
 
 ## Objetivos
 
-Este trabalho tem como objetivo desenvolver uma plataforma que auxilie na otimização do gerenciamenmto de processos no setor de hotelaria, com foco na experiência do cliente, tornando o atnedimento mais eficiente, reduzindo erros, economizando tempo, melhorando a qualidade dos serviços e rentabilidade do negócio.
+Este trabalho tem como objetivo desenvolver uma plataforma que auxilie na otimização do gerenciamenmto de processos no setor de hotelaria, com foco na experiência do cliente, tornando o atendimento mais eficiente, reduzindo erros, economizando tempo, melhorando a qualidade dos serviços e rentabilidade do negócio.
 
 ### Objetivos específicos
 
@@ -27,7 +27,7 @@ Elaborar uma plataforma que permita:
 
 ## Justificativa
 
-O projeto dá-se principalmente para que haja uma consolidação dos aprendizados e implementação dos conceitos apresentados tanto neste quanto em semestres anteriores, provendo assim uma aplicação estável e segura para utilização. Sendo assim, A principal função do projeto então é facilitar a vida dos usuários que buscam fazer reservas online em um hotel, sendo possível criar a reserva de maneira antecipada e sem surpresas, sejam essas advindas qualquer natureza, como indisponibilidade, taxas abusivas e inconveniências ao longo da estadia.
+O projeto dá-se principalmente para que haja uma consolidação dos aprendizados e implementação dos conceitos apresentados tanto neste quanto em semestres anteriores, provendo assim uma aplicação estável e segura para utilização. Sendo assim, a principal função do projeto então é facilitar a vida dos usuários que buscam fazer reservas online em um hotel, sendo possível criar a reserva de maneira antecipada e sem surpresas, sejam essas advindas qualquer natureza, como indisponibilidade, taxas abusivas e inconveniências ao longo da estadia.
 
 ## Público-Alvo
 
@@ -79,7 +79,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móveis nativamente | ALTA | 
+|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis nativamente | ALTA | 
 |RNF-002| O sistema deve ser responsivo para ser apresentado da maneira correta por telas com resolução variada | ALTA | 
 |RNF-003| O sistema deve garantir que os usuários tenham acesso apenas aos dados e funcionalidades compatíveis com seu perfil de permissão | ALTA | 
 |RNF-004| O sistema deve implementar autenticação por meio de credenciais (login e senha) com no mínimo 8 caracteres, com combinação mínima de números e caracteres especiais | ALTA |
@@ -154,8 +154,9 @@ Atualizado em: 30/08/2025
 | Luiz Andrade  | RFs & RNFs (Parcialmente)                  | 01/02/2024     | 26/02/2024 | ✔️    | 05/08/2025      |
 | Luiz Andrade  | Solução github action (Parcialmente)       | 01/02/2024     | 26/02/2024 | ✔️    | 05/08/2025      |
 | Luiz Andrade  | Hospedagem Azure (Parcialmente)            | 01/02/2024     | 26/02/2024 | ✔️    | 05/08/2025      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
+| Sibelle Diniz | Objetivos                                  | 22/08/2025     | 23/08/2025 | ✔️    | 23/08/2025      |
+| Sibelle Diniz | Histórias de usuário                       | 22/08/2025     | 23/08/2025 | ✔️    | 23/08/2025      |
+| Sibelle Diniz | Mapa de stakeholders                       | 23/08/2025     | 23/08/2025 | ✔️    | 23/08/2025      |
 | AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
 
 Legenda:

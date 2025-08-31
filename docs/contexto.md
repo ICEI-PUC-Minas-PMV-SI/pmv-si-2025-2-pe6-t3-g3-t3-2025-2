@@ -263,6 +263,7 @@ Atualizado em: 31/08/2025
 | Matheus Fraga                                | Revisão final do documento                | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Matheus Fraga                                | Técnica MoSCoW e definição de prioridades | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Matheus Fraga                                | Documentação das tecnologias utilizadas   | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Victor Henrique                              | README.md                                 | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 
 Legenda:
 

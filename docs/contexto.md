@@ -205,7 +205,7 @@
   - **Segurança e robustez**, assegurando que os dados dos usuários e transações sejam protegidos.
   - **Experiência do usuário de qualidade**, com respostas rápidas e confiáveis.
 
-  ![diagrama de arquitetura](/home/mfraga/img/diagrams/solution-architecture.svg)
+![diagrama de arquitetura](img/diagrams/solution-architecture.svg)
 
   O sistema é dividido em três camadas principais:
 

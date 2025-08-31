@@ -229,27 +229,22 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
   3. **Banco de Dados**: Armazenamento de informações persistentes, incluindo usuários, reservas, hotéis e transações.
 
 
-  ## Tecnologias Utilizadas
+ ## Tecnologias Utilizadas
 
-  **Backend:** [FastAPI (Python)](https://fastapi.tiangolo.com/?utm_source=chatgpt.com)https://fastapi.tiangolo.com/)
+**Backend:** [FastAPI (Python)](https://fastapi.tiangolo.com/)  
+- Framework leve e moderno, com suporte nativo a APIs RESTful.  
+- Alta performance e facilidade de integração com bancos de dados e autenticação.  
 
-  - Framework leve e moderno, com suporte nativo a APIs RESTful.
+**Frontend:** [React Native + Expo](https://docs.expo.dev/)  
+- Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.  
+- Facilita criação de interfaces responsivas e interativas.  
 
-  - Alta performance e facilidade de integração com bancos de dados e autenticação.
+**Mock de sistema de pagamento:** [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)  
+- Simula endpoints de pagamento para testes de integração.  
+- Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
 
-  **Frontend:** [React Native + Expo](https://docs.expo.dev/)
 
-  - Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.
-
-  - Facilita criação de interfaces responsivas e interativas.
-
-  **Mock de sistema de pagamento:** [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)https://beeceptor.com/docs/beeceptor-features/)
-
-  - Simula endpoints de pagamento para testes de integração.
-
-  - Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
-
-  ## Hospedagem
+ ## Hospedagem
 
   O sistema será hospedado utilizando:
 

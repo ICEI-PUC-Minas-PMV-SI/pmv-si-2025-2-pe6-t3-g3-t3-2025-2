@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# ALUGA AÍ
 
 `CURSO: Sistemas de Informação`
 
@@ -11,6 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Astor Franco de Sena Neto
+* Gustavo Silva Rossetti
 * Luiz Henrique Santos de Andrade
 * Matheus Carlos Fraga dos Santos
 * Sibelle Mendes Diniz

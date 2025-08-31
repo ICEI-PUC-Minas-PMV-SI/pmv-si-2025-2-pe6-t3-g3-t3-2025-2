@@ -174,7 +174,7 @@ Atualizado em: 31/08/2025
 | Luiz Andrade, Matheus Fraga                  | Solução github action (CI/DC)         | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Luiz Andrade, Matheus Fraga                  | Criação do banco de dados             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Luiz Andrade, Matheus Fraga                  | Hospedagem Azure                      | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
-| Victor Henrique                              | ReadMe                                | 31/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Victor Henrique                              | README.md                             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Matheus Fraga                                | Revisão final de entrega de documento | 29/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 
 Legenda:

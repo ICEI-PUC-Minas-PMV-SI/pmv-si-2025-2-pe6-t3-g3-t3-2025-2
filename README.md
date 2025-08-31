@@ -6,7 +6,7 @@
 
 `SEMESTRE: 6º`
 
-O projeto visa desenvolver uma plataforma digital para o setor hoteleiro que organize e disponibilize informações claras e atualizadas sobre hospedagens, facilitando o processo de busca, reserva e pagamento para os clientes. A solução busca melhorar a experiência do usuário e, ao mesmo tempo, otimizar a gestão dos hotéis, reduzindo erros operacionais e aumentando a competitividade no mercado digital.
+O projeto visa desenvolver um sistema distribuido para o setor hoteleiro que organize e disponibilize informações claras e atualizadas sobre hospedagens, facilitando o processo de busca, reserva e pagamento para os clientes. A solução busca melhorar a experiência do usuário e, ao mesmo tempo, otimizar a gestão dos hotéis, reduzindo erros operacionais e aumentando a competitividade no mercado digital.
 
 ## Integrantes
 

@@ -69,7 +69,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-004| O usuário deve ser capaz de realizar pesquisas por quartos do seu interesse  | ALTA |
 |RF-005| O usuário deve ser capaz de estender e/ou cancelar sua reserva | ALTA |
 |RF-006| O usuário deve ser capaz de filtrar suas buscas  | MÉDIA |
-|RF-008| O usuário deve ser capaz de fazer um review de sua estadia | BAIXA |
+|RF-008| O usuário deve ser capaz de fazer um review (avaliação) de sua estadia | BAIXA |
+|RF-009| O sistema impor um padrão de complexidade mínimo exigido às senhas (ao menos uma letra maiúscula, um número e um caractere especial) | ALTA |
+|RF-010| O sistema impor uma validade de idade mínima aos usuário durante o cadastro (ao menos 18 anos) | ALTA |
+|RF-011| O sistema validar formatação correta de e-mail e número de celular durante o cadastro | ALTA |
 
 
 ### Requisitos não Funcionais
@@ -126,8 +129,11 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Tecnologias Utilizadas
 
-Backend: Fastapi (Python)
-Frontend: React Native + expo
+Backend: [Fastapi (Python)](https://fastapi.tiangolo.com/)
+
+Frontend: [React Native + expo)](https://docs.expo.dev/)
+
+Mock de sistema de pagamento: [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)
 
 ## Hospedagem
 

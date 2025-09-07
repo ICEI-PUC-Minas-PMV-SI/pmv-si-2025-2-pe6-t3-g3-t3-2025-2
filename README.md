@@ -1,4 +1,6 @@
-# ALUGA AÍ
+# Aluga aí
+
+![Logo](docs/img/logo.png)
 
 `CURSO: Sistemas de Informação`
 

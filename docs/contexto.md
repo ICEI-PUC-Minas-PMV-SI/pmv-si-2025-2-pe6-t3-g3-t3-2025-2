@@ -113,12 +113,13 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 | RF-009   | Controle de acesso por perfil, assegurando que usuários visualizem apenas dados compatíveis | Alta      | 🔴 M – Deve ter    | Segurança e gestão de permissões            |
 | RF-010   | Exibir informações detalhadas do hotel, incluindo descrição, fotos, serviços, políticas e localização | Média | 🟢 C – Poderia ter | Tomada de decisão informada pelo usuário    |
 | RF-011   | Permitir avaliação da estadia pelos hóspedes, registrando feedbacks                      | Baixa       | 🟢 C – Poderia ter | Coleta de feedbacks para melhoria contínua  |
-| **RF-012**  | Gerenciar cadastros de hotéis, permitindo controle administrativo completo              | Alta        | 🔴 M – Deve ter    | Manter e administrar a base de hotéis       |
-| **RF-012a** | Permitir o cadastro de um novo hotel com informações básicas                           | Alta        | 🔴 M – Deve ter    | Inserir novos hotéis no sistema             |
-| **RF-012b** | Permitir a atualização das informações de um hotel existente                           | Média       | 🟡 S – Deveria ter | Manter dados atualizados e consistentes     |
-| **RF-012c** | Permitir a exclusão lógica de um hotel (soft delete)                                   | Média       | 🟡 S – Deveria ter | Evitar inconsistências e manter histórico   |
-| **RF-012d** | Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação  | Alta        | 🔴 M – Deve ter    | Visualizar e gerenciar todos os hotéis      |
-| **RF-012e** | Garantir que avaliação e nível de popularidade do hotel sejam calculados automaticamente, sem permitir alteração manual | Alta | 🔴 M – Deve ter | As métricas do hotel devem refletir dados reais e confiáveis |
+| RF-012   | Gerenciar cadastros de hotéis, permitindo controle administrativo completo              | Alta        | 🔴 M – Deve ter    | Manter e administrar a base de hotéis       |
+| RF-012a  | Permitir o cadastro de um novo hotel com informações básicas                           | Alta        | 🔴 M – Deve ter    | Inserir novos hotéis no sistema             |
+| RF-012b  | Permitir a atualização das informações de um hotel existente                           | Média       | 🟡 S – Deveria ter | Manter dados atualizados e consistentes     |
+| RF-012c  | Permitir a exclusão lógica de um hotel (soft delete)                                   | Média       | 🟡 S – Deveria ter | Evitar inconsistências e manter histórico   |
+| RF-012d  | Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação  | Alta        | 🔴 M – Deve ter    | Visualizar e gerenciar todos os hotéis      |
+| RF-012e  | Garantir que avaliação e nível de popularidade do hotel sejam calculados automaticamente, sem permitir alteração manual | Alta | 🔴 M – Deve ter | As métricas do hotel devem refletir dados reais e confiáveis |
+| RF-012f  | Evitar cadastro de hotéis muito próximos uns dos outros (aproximadamente <11 metros)   | Alta        | 🔴 M – Deve ter    | Garantir integridade da base e evitar registros duplicados próximos geograficamente |
 
 
   ### Requisitos Não Funcionais

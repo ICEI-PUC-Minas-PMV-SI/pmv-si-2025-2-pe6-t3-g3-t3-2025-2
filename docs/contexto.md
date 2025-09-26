@@ -120,6 +120,8 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 | RF-012d  | Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação  | Alta        | 🔴 M – Deve ter    | Visualizar e gerenciar todos os hotéis      |
 | RF-012e  | Garantir que avaliação e nível de popularidade do hotel sejam calculados automaticamente, sem permitir alteração manual | Alta | 🔴 M – Deve ter | As métricas do hotel devem refletir dados reais e confiáveis |
 | RF-012f  | Evitar cadastro de hotéis muito próximos uns dos outros (aproximadamente <11 metros)   | Alta        | 🔴 M – Deve ter    | Garantir integridade da base e evitar registros duplicados próximos geograficamente |
+| RF-012g  | Rejeitar campos desconhecidos no payload de cadastro do hotel (`extra fields not permitted`) | Alta | 🔴 M – Deve ter | Evitar inconsistências e erros de integração com payloads indevidos |
+| RF-012h  | Validar que a latitude esteja entre -90 e 90 e a longitude entre -180 e 180 graus       | Alta        | 🔴 M – Deve ter    | Garantir integridade e coerência dos dados geográficos cadastrados |
 
 
   ### Requisitos Não Funcionais

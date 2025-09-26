@@ -99,7 +99,7 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 ### Requisitos Funcionais
 
 | ID       | Descrição do requisito                                                                 | Prioridade | Categoria MoSCoW  | Objetivo relacionado                        |
-|---------- | --------------------------------------------------------------------------------------- | ----------- | ----------------- | ------------------------------------------- |
+|----------| --------------------------------------------------------------------------------------- | ----------- | ----------------- | ------------------------------------------- |
 | RF-001   | Permitir que o usuário realize reservas de um ou mais quartos                            | Alta        | 🔴 M – Deve ter    | Realização de reservas seguras e eficientes |
 | RF-002   | Integrar meios de pagamento (simulado ou real)                                           | Alta        | 🔴 M – Deve ter    | Pagamentos seguros e flexíveis              |
 | RF-003   | Facilitar o cadastro de usuários com dados pessoais válidos                              | Alta        | 🔴 M – Deve ter    | Cadastro simples e seguro                   |
@@ -118,6 +118,8 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 | **RF-012b** | Permitir a atualização das informações de um hotel existente                           | Média       | 🟡 S – Deveria ter | Manter dados atualizados e consistentes     |
 | **RF-012c** | Permitir a exclusão lógica de um hotel (soft delete)                                   | Média       | 🟡 S – Deveria ter | Evitar inconsistências e manter histórico   |
 | **RF-012d** | Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação  | Alta        | 🔴 M – Deve ter    | Visualizar e gerenciar todos os hotéis      |
+| **RF-012e** | Garantir que avaliação e nível de popularidade do hotel sejam calculados automaticamente, sem permitir alteração manual | Alta | 🔴 M – Deve ter | As métricas do hotel devem refletir dados reais e confiáveis |
+
 
   ### Requisitos Não Funcionais
 

@@ -96,23 +96,28 @@ A figura abaixo apresenta o **Mapa de Stakeholders** do sistema:
 
   A aplicação da técnica considerou **impacto no usuário, dependência técnica e viabilidade de implementação** dentro do prazo acadêmico.
 
-  ### Requisitos Funcionais
+### Requisitos Funcionais
 
-  | ID      | Descrição do requisito                                       | Prioridade | Categoria MoSCoW  | Objetivo relacionado                        |
-  | ------- | ------------------------------------------------------------ | ---------- | ----------------- | ------------------------------------------- |
-  | RF-001  | Permitir que o usuário realize reservas de um ou mais quartos | Alta       | 🔴 M – Deve ter    | Realização de reservas seguras e eficientes |
-  | RF-002  | Integrar meios de pagamento (simulado ou real)               | Alta       | 🔴 M – Deve ter    | Pagamentos seguros e flexíveis              |
-  | RF-003  | Facilitar o cadastro de usuários com dados pessoais válidos  | Alta       | 🔴 M – Deve ter    | Cadastro simples e seguro                   |
-  | RF-004  | Garantir idade mínima de 18 anos no cadastro                 | Alta       | 🔴 M – Deve ter    | Conformidade legal e segurança              |
-  | RF-005  | Validar complexidade mínima de senhas                        | Alta       | 🔴 M – Deve ter    | Segurança do usuário                        |
-  | RF-006  | Validar e-mail e número de celular durante o cadastro        | Alta       | 🔴 M – Deve ter    | Garantir dados confiáveis dos usuários      |
-  | RF-007a | Permitir pesquisa de quartos e hotéis por nome, cidade ou bairro | Alta       | 🔴 M – Deve ter    | Encontrar rapidamente opções relevantes     |
-  | RF-007b | Permitir aplicação de filtros por datas, tipo de acomodação e serviços | Média      | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
-  | RF-007c | Permitir ordenação por preço, avaliação, distância ou popularidade | Média      | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
-  | RF-008  | Possibilitar alteração ou cancelamento de reservas conforme necessidade | Média      | 🟡 S – Deveria ter | Flexibilidade na gestão de reservas         |
-  | RF-009  | Controle de acesso por perfil, assegurando que usuários visualizem apenas dados compatíveis | Alta       | 🔴 M – Deve ter    | Segurança e gestão de permissões            |
-  | RF-010  | Exibir informações detalhadas do hotel, incluindo descrição, fotos, serviços, políticas e localização | Média      | 🟢 C – Poderia ter | Tomada de decisão informada pelo usuário    |
-  | RF-011  | Permitir avaliação da estadia pelos hóspedes, registrando feedbacks | Baixa      | 🟢 C – Poderia ter | Coleta de feedbacks para melhoria contínua  |
+| ID       | Descrição do requisito                                                                 | Prioridade | Categoria MoSCoW  | Objetivo relacionado                        |
+|---------- | --------------------------------------------------------------------------------------- | ----------- | ----------------- | ------------------------------------------- |
+| RF-001   | Permitir que o usuário realize reservas de um ou mais quartos                            | Alta        | 🔴 M – Deve ter    | Realização de reservas seguras e eficientes |
+| RF-002   | Integrar meios de pagamento (simulado ou real)                                           | Alta        | 🔴 M – Deve ter    | Pagamentos seguros e flexíveis              |
+| RF-003   | Facilitar o cadastro de usuários com dados pessoais válidos                              | Alta        | 🔴 M – Deve ter    | Cadastro simples e seguro                   |
+| RF-004   | Garantir idade mínima de 18 anos no cadastro                                             | Alta        | 🔴 M – Deve ter    | Conformidade legal e segurança              |
+| RF-005   | Validar complexidade mínima de senhas                                                    | Alta        | 🔴 M – Deve ter    | Segurança do usuário                        |
+| RF-006   | Validar e-mail e número de celular durante o cadastro                                    | Alta        | 🔴 M – Deve ter    | Garantir dados confiáveis dos usuários      |
+| RF-007a  | Permitir pesquisa de quartos e hotéis por nome, cidade ou bairro                         | Alta        | 🔴 M – Deve ter    | Encontrar rapidamente opções relevantes     |
+| RF-007b  | Permitir aplicação de filtros por datas, tipo de acomodação e serviços                   | Média       | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
+| RF-007c  | Permitir ordenação por preço, avaliação, distância ou popularidade                       | Média       | 🟡 S – Deveria ter | Encontrar rapidamente opções relevantes     |
+| RF-008   | Possibilitar alteração ou cancelamento de reservas conforme necessidade                  | Média       | 🟡 S – Deveria ter | Flexibilidade na gestão de reservas         |
+| RF-009   | Controle de acesso por perfil, assegurando que usuários visualizem apenas dados compatíveis | Alta      | 🔴 M – Deve ter    | Segurança e gestão de permissões            |
+| RF-010   | Exibir informações detalhadas do hotel, incluindo descrição, fotos, serviços, políticas e localização | Média | 🟢 C – Poderia ter | Tomada de decisão informada pelo usuário    |
+| RF-011   | Permitir avaliação da estadia pelos hóspedes, registrando feedbacks                      | Baixa       | 🟢 C – Poderia ter | Coleta de feedbacks para melhoria contínua  |
+| **RF-012**  | Gerenciar cadastros de hotéis, permitindo controle administrativo completo              | Alta        | 🔴 M – Deve ter    | Manter e administrar a base de hotéis       |
+| **RF-012a** | Permitir o cadastro de um novo hotel com informações básicas                           | Alta        | 🔴 M – Deve ter    | Inserir novos hotéis no sistema             |
+| **RF-012b** | Permitir a atualização das informações de um hotel existente                           | Média       | 🟡 S – Deveria ter | Manter dados atualizados e consistentes     |
+| **RF-012c** | Permitir a exclusão lógica de um hotel (soft delete)                                   | Média       | 🟡 S – Deveria ter | Evitar inconsistências e manter histórico   |
+| **RF-012d** | Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação  | Alta        | 🔴 M – Deve ter    | Visualizar e gerenciar todos os hotéis      |
 
   ### Requisitos Não Funcionais
 

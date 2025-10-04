@@ -20,19 +20,19 @@ O principal objetivo da API é centralizar e padronizar a comunicação entre os
 
 Os objetivos específicos da API incluem:
 
-1. Gerenciar o ciclo de vida das reservas:
+**1. Gerenciar o ciclo de vida das reservas:**
 Permitir que usuários autenticados possam criar, listar, atualizar e excluir reservas de quartos de forma simples e segura, mantendo o vínculo entre reserva, usuário e quarto.
 
-2. Centralizar autenticação e controle de acesso:
+**2. Centralizar autenticação e controle de acesso:**
 Oferecer endpoints para cadastro, login e autenticação via JWT, garantindo que apenas usuários autorizados acessem os recursos apropriados.
 
-3. Padronizar a comunicação entre serviços:
+**3. Padronizar a comunicação entre serviços:**
 Servir como camada intermediária entre os módulos de usuários, quartos e reservas, utilizando o formato JSON e o protocolo HTTP com métodos RESTful.
 
-4. Garantir segurança e rastreabilidade:
+**4. Garantir segurança e rastreabilidade:**
 Aplicar políticas de autenticação, autorização e registro de ações (logs) para assegurar integridade e confiabilidade dos dados.
 
-5. Promover escalabilidade e modularidade:
+**5. Promover escalabilidade e modularidade:**
 Manter os serviços desacoplados, permitindo que cada módulo evolua de forma independente e possa ser escalado conforme a demanda.
 
 
@@ -42,9 +42,29 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+~~Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.~~
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
+
+### Backend
+* **FastAPI:**  Framework principal para criação da API RESTful.
+* **Python 3.13:** Linguagem de programação utilizada no backend.
+
+### Banco de Dados
+* **PostgreSQL:** Sistema gerenciador de banco de dados relacional (SGBD) utilizado para armazenamento das informações.
+* **SQLAlchemy:** ORM (Object Relational Mapper) responsável por fazer a ponte entre o banco de dados e as entidades Python.
+
+### Autenticação e Segurança
+* **JWT (JSON Web Token):** Utilizado para autenticação e controle de acesso dos usuários.
+* **Passlib / bcrypt:** Bibliotecas utilizadas para criptografar senhas com segurança antes de armazená-las no banco de dados.
+
+### Arquitetura e Organização
+* **Pydantic:** Usado para definir e validar schemas de entrada e saída, garantindo consistência nos dados trafegados pela API.
+* **Uvicorn:** Servidor ASGI de alta performance responsável por executar a aplicação FastAPI, oferecendo suporte a requisições assíncronas e escalabilidade horizontal.
+
+### Ambiente e Execução
+* **Virtualenv (.venv):** Isolamento do ambiente Python para controle de dependências.
+* **Git e GitHub:** Controle de versão e colaboração entre desenvolvedores.
 
 ## API Endpoints
 

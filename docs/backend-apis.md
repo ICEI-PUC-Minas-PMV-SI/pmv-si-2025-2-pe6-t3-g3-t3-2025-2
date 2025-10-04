@@ -12,9 +12,28 @@ Cada módulo foi projetado para operar de forma autônoma e comunicável via Web
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+~~O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?~~
 
-[Inclua os objetivos da sua api.]
+~~[Inclua os objetivos da sua api.]~~
+
+O principal objetivo da API é centralizar e padronizar a comunicação entre os diferentes módulos do sistema distribuído, garantindo integração segura, eficiente e escalável entre os serviços. A API foi projetada para permitir tanto o uso interno (entre os módulos do próprio sistema) quanto o uso externo controlado (por aplicações clientes, como um painel administrativo ou aplicativo móvel).
+
+Os objetivos específicos da API incluem:
+
+1. Gerenciar o ciclo de vida das reservas:
+Permitir que usuários autenticados possam criar, listar, atualizar e excluir reservas de quartos de forma simples e segura, mantendo o vínculo entre reserva, usuário e quarto.
+
+2. Centralizar autenticação e controle de acesso:
+Oferecer endpoints para cadastro, login e autenticação via JWT, garantindo que apenas usuários autorizados acessem os recursos apropriados.
+
+3. Padronizar a comunicação entre serviços:
+Servir como camada intermediária entre os módulos de usuários, quartos e reservas, utilizando o formato JSON e o protocolo HTTP com métodos RESTful.
+
+4. Garantir segurança e rastreabilidade:
+Aplicar políticas de autenticação, autorização e registro de ações (logs) para assegurar integridade e confiabilidade dos dados.
+
+5. Promover escalabilidade e modularidade:
+Manter os serviços desacoplados, permitindo que cada módulo evolua de forma independente e possa ser escalado conforme a demanda.
 
 
 ## Modelagem da Aplicação

@@ -1,10 +1,14 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
+~~O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.~~
 
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
+~~Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.~~
 
-[Inclua uma breve descrição do projeto.]
+~~[Inclua uma breve descrição do projeto.]~~
+
+O sistema distribuído visa proporcionar uma plataforma de gestão hoteleira, agregando vários módulos independentes para suprir as necessidades básicas dos usuários, administração e o próprio hotel. A ferramenta oferece funcionalidades essenciais como autenticação segura, cadastro e validação de usuários, gerenciamento de hotéis e quartos, realização e controle de reservas, avaliações de estadia e integração com meios de pagamento.
+
+Cada módulo foi projetado para operar de forma autônoma e comunicável via Web APIs, garantindo flexibilidade, escalabilidade e fácil manutenção do sistema. Toda a comunicação entre os módulos ocorre por meio de requisições HTTP e respostas em JSON, assegurando interoperabilidade, segurança e flexibilidade.
 
 ## Objetivos da API
 

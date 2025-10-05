@@ -94,7 +94,7 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
       }
     }
     ```
-
+---
 ### Endpoint Reservas
 - Método: GET
 - URL: /reservas
@@ -109,7 +109,7 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
 		"room_id": 222,
 		"date_checkin": "2025-12-20T14:00:00",
 		"date_checkout": "2025-12-30T12:00:00"
-	}
+			  }
     }
     ```
    - Sucesso (200 OK)
@@ -119,8 +119,34 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
       "data": []
     }
     ```
-
-  - Método: POST
+***
+- Método: GET
+- URL: /reservas/{id_reserva}
+- Resposta:
+	- Sucesso (200 OK)
+	    ```
+	    {
+	      "message": "Success",
+	      "data": {
+		"id": "081274f3-9feb-45a2-8296-c9205ff56af00",
+		"user_id": "123",
+		"room_id": 222,
+		"date_checkin": "2025-12-20T14:00:00",
+		"date_checkout": "2025-12-30T12:00:00"
+				  }
+	     }
+	    ```
+	- Erro (404 Not Found)
+    ```
+    {
+      "message": "Erro",
+      "data": {
+	"detail": "Reservation not found"
+			  }
+    }
+    ```
+***
+- Método: POST
 - URL: /reservas
 - Parâmetros:
   - param1: {
@@ -132,15 +158,65 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
   - Sucesso (200 OK)
     ```
     {
+	"message": "Success",
+	"data": {
 	"id": "081274f3-9feb-45a2-8296-c9205ff56af0",
 	"user_id": "123",
 	"room_id": 222,
 	"date_checkin": "2025-12-20T14:00:00",
 	"date_checkout": "2025-12-30T12:00:00"
-}
+			}
     }
+	```
+***
+- Método: PATCH
+- URL: /reservas/{id_reserva}
+- Resposta:
+  - Sucesso (200 OK)
     ```
-
+    {
+	"message": "Success",
+	"data": {
+	"id": "081274f3-9feb-45a2-8296-c9205ff56af0",
+	"user_id": "123",
+	"room_id": 999,
+	"date_checkin": "2025-12-22T14:00:00",
+	"date_checkout": "2025-12-28T12:00:00"
+			}
+    }
+	```
+	
+  - Erro (404 Not Found)
+    ```
+     {
+    "message": "Erro",
+    "data":  {
+	"detail": "Reservation not found"
+			 }
+    }
+	```	
+***
+- Método: DELETE
+- URL: /reservas/{id_reserva}
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+    "message": "Success",
+    "data": {
+	"message": "Reservation 081274f3-9feb-45a2-8296-c9205ff56af0 deleted successfully"
+			}
+    }
+	```
+  - Erro (404 Not Found)
+	 ```
+    {
+    "message": "Erro",
+    "data": {
+	"detail": "Reservation not found"
+			}
+    }
+	```
 
 ## Considerações de Segurança
 

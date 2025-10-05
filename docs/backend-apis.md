@@ -244,7 +244,7 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
 
 - [**Testes Users**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/users-api-testing.md)
 - [**Testes Auth**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/auth-api-testing.md)
-- [**Testes Reservas**]()
+- [**Testes Reservas**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/reservas-api-testing.md)
 
 # Referências
 

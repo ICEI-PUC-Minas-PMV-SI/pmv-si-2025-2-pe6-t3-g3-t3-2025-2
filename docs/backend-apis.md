@@ -95,6 +95,53 @@ Manter os serviços desacoplados, permitindo que cada módulo evolua de forma in
     }
     ```
 
+### Endpoint Reservas
+- Método: GET
+- URL: /reservas
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Success",
+      "data": {
+		"id": "081274f3-9feb-45a2-8296-c9205ff56af0",
+		"user_id": "123",
+		"room_id": 222,
+		"date_checkin": "2025-12-20T14:00:00",
+		"date_checkout": "2025-12-30T12:00:00"
+	}
+    }
+    ```
+   - Sucesso (200 OK)
+    ```
+    {
+      "message": "Success",
+      "data": []
+    }
+    ```
+
+  - Método: POST
+- URL: /reservas
+- Parâmetros:
+  - param1: {
+  "room_id": 222,
+  "date_checkin": "2025-12-20T14:00:00",
+  "date_checkout": "2025-12-30T12:00:00"
+}
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+	"id": "081274f3-9feb-45a2-8296-c9205ff56af0",
+	"user_id": "123",
+	"room_id": 222,
+	"date_checkin": "2025-12-20T14:00:00",
+	"date_checkout": "2025-12-30T12:00:00"
+}
+    }
+    ```
+
+
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]

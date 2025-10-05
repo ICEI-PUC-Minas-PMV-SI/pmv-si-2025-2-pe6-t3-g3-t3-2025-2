@@ -41,8 +41,8 @@ This document serves as a record of API tests performed, the endpoints tested, e
     [...]
   ]
 - Evidences:
-![alt text](img/img/200adminlogin.png)
-![alt text](img/img/200adminusers.png)
+![alt text](img/200adminlogin.png)
+![alt text](img/200adminusers.png)
 
 ### 2. `GET /users/`
 

@@ -332,6 +332,8 @@ Os objetivos específicos da API incluem:
 - [**Testes Users**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/users-api-testing.md)  
 - [**Testes Auth**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/auth-api-testing.md)  
 - [**Testes Reservas**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/reservas-api-testing.md)
+- [**Testes hotéis**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/hotels-api-testing.md)
+- [**Testes comodidades dos hotéis**](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/main/docs/amenities-api-testing.md)
 
 # Referências
 

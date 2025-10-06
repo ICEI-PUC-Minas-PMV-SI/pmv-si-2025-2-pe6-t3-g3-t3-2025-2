@@ -4,10 +4,11 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 
 ## Visão Geral dos Testes
 
-* **Projeto**: `aluga-api`
-* **Ambiente**: Ambiente de desenvolvimento local
-* **Date**: 05/10/2025
-* **Ferramentas**: Curl / Bruno
+| **Projeto**     | `aluga-api`                         |
+| --------------- | ----------------------------------- |
+| **Ambiente**    | `Ambiente de desenvolvimento local` |
+| **Date**        | 05/10/2025                          |
+| **Ferramentas** | Curl / Bruno                        |
 
 ---
 
@@ -16,7 +17,7 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 ### 1. `POST /amenities/`
 **Objetivo**: Criar uma nova comodidade.
 - Método: POST
-- URL: `/aluga-api/v1/amenities/?code={code}&label={label}`
+- URL: `/amenities/?code={code}&label={label}`
 - Parâmetros:
 ```json
 {
@@ -36,13 +37,14 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 - Erros possíveis:
 - 400 Bad Request → Campos obrigatórios ausentes
 - 409 Conflict → Comodidade já existe
-- Evidências:  
+- Evidências:
+![Criar uma nova comodidade](img/post-amenities.png)
 
 ---
 ### 2. `GET /amenities/`
 **Objetivo**: Listar todas as comodidades cadastradas.
 - Método: GET
-- URL: `/aluga-api/v1/amenities/`
+- URL: `/amenities/`
 - Resposta:
 - Sucesso (200 OK)
 ```json
@@ -59,14 +61,14 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 	}
 ]
 ```
-- Evidências:  
-
+- Evidências: 
+![Listar todas as comodidades](img/get-amenities.png)
 
 ---
 ### 3. `GET /amenities/{id}`
 **Objetivo**: Buscar uma comodidade por ID.
 - Método: GET
-- URL: `/aluga-api/v1/amenities/{id}`
+- URL: `/amenities/{id}`
 - Resposta:
 - Sucesso (200 OK)
 ```json
@@ -82,12 +84,14 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
   "detail": "Amenity not found"
 }
 ```
-- Evidências:  
+- Evidências:
+![Buscar comodidade por ID](img/get-amenity.png)
+
 ---
 ### 4. `PUT /amenities/{id}`
 **Objetivo**: Atualizar o label de uma comodidade.
 - Método: PUT
-- URL: `/aluga-api/v1/amenities/{id}?label={novo_label}`
+- URL: `amenities/{id}?label={novo_label}`
 - Resposta:
 - Sucesso (200 OK)
 ```json
@@ -100,7 +104,9 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 - Erros possíveis:
 - 404 Not Found → Comodidade não encontrada
 - 422 Unprocessable Entity → Label inválido ou vazio
-- Evidências:  
+- Evidências:
+![Atualizar label da comodidade](img/update-amenity.png)
+
 
 
 
@@ -109,7 +115,7 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 
 **Objetivo**: Deletar uma comodidade.
 - Método: DELETE
-- URL: `/aluga-api/v1/amenities/{id}`
+- URL: `/amenities/{id}`
 - Resposta:
 - Sucesso (204 No Content)
 ```json
@@ -121,4 +127,5 @@ Este documento registra os testes do CRUD de comodidades, com endpoints, payload
 - 404 Not Found → Comodidade não encontrada
 - 409 Conflict → Comodidade associada a hotéis
 
-- Evidências:  
+- Evidências:
+![Deletar comodidade](img/delete-amenity.png)

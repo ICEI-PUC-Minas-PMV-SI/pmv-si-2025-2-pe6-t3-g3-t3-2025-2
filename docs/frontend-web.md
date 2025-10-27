@@ -42,6 +42,12 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
+**Página de Reservas**
+
+<img width="400" alt="wireframe" src="https://github.com/user-attachments/assets/7141c46a-0eac-4c02-ae32-2c25b9a6d33a" />
+<img width="400" alt="wireframe2" src="https://github.com/user-attachments/assets/146e7a82-3f10-426d-a3a2-25001655b419" />
+
+
 ### Design Visual
 
 ~~[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]~~

@@ -1,10 +1,42 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+~~[Inclua uma breve descrição do projeto e seus objetivos.]~~
+
+O Front-end Web da plataforma tem como principal objetivo oferecer uma interface **moderna, intuitiva e responsiva** que facilite a interação entre o usuário e os serviços disponibilizados pela API. O sistema busca proporcionar uma experiência fluida, segura e acessível, permitindo que hóspedes, administradores e gerentes de hotéis interajam com as funcionalidades do sistema de forma simples e eficiente.
 
 ## Projeto da Interface Web
 
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+~~[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]~~
+
+O projeto da interface foi elaborado com foco em **usabilidade e experiência do usuário (UX)**, seguindo boas práticas de design responsivo e interatividade. A aplicação foi dividida em módulos visuais correspondentes aos principais fluxos do sistema:
+
+1. **Página Inicial (Home)**:
+- Exibe uma barra de pesquisa com filtros de destino, datas e quantidade de hóspedes.
+- Mostra seções com destaques, hotéis recomendados e promoções em destaque.
+- Inclui um rodapé com links institucionais e informações de contato.
+
+2. **Página de Resultados de Busca**:
+- Lista os hotéis filtrados conforme os critérios do usuário.
+- Cada item da lista mostra nome, imagem, preço, avaliação e botão “Ver Detalhes”.
+- Filtros laterais permitem refinar a busca (por preço, avaliação, comodidades etc.).
+
+3. **Página de Detalhes do Hotel**:
+- Exibe imagens em carrossel, descrição completa, tipo de quartos disponíveis e avaliações de outros usuários.
+- Contém botões de ação como “Reservar Agora” e “Adicionar aos Favoritos”.
+
+4. **Página de Reserva**:
+- Mostra os detalhes do quarto selecionado, datas da estadia e valor total.
+- Permite ao usuário confirmar a reserva e selecionar o método de pagamento.
+- Inclui mensagens de sucesso e redirecionamento após conclusão.
+
+5. **Área do Usuário (Dashboard)**:
+- Exibe as reservas ativas e passadas do usuário.
+- Permite editar dados pessoais, cancelar reservas e enviar avaliações.
+- Possui controle de autenticação via JWT para proteger as informações.
+
+6. **Painel Administrativo**:
+- Exclusivo para usuários com permissão de administrador.
+- Permite cadastrar e editar hotéis, quartos e visualizar estatísticas.
 
 ### Wireframes
 
@@ -12,7 +44,22 @@
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+~~[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]~~
+
+O design da aplicação foi pensado para oferecer uma experiência agradável, moderna e intuitiva em todos os dispositivos. Utilizando **React Native com Expo**, o objetivo é garantir uma interface **multiplataforma**, funcionando de forma fluida tanto em Android quanto em iOS, a partir de uma única base de código.
+
+O estilo visual segue uma linha **minimalista e funcional**, priorizando clareza e conforto visual. A paleta de cores combina:
+- Azul-escuro (**#1E3A8A**) para transmitir confiança
+- Amarelo (**#FBBF24**) para destacar ações importantes
+- Além de branco (**#FFFFFF**) e cinza-claro (**#F3F4F6**) como base neutra.
+<img width="600" alt="Paleta" src="https://github.com/user-attachments/assets/119f77a8-7ad4-4b76-b575-1da4f737153e" />
+
+A **tipografia** principal é *Poppins* (ou *Roboto*, conforme o sistema), com tamanhos e pesos adaptados para boa leitura em telas pequenas.
+
+Os **ícones** seguem um padrão simples e reconhecível, utilizando bibliotecas como Expo Vector Icons, reforçando a usabilidade sem poluir a interface.
+
+O **layout** é responsivo e utiliza Flexbox para ajustar os componentes conforme o tamanho da tela. Animações leves e feedbacks visuais indicam ações do usuário, tornando a navegação mais natural.
+A aplicação também segue boas práticas de **acessibilidade**, como contraste adequado e áreas de toque confortáveis, garantindo uma boa experiência para todos os usuários.
 
 ## Fluxo de Dados
 

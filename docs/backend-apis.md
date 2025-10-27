@@ -337,33 +337,31 @@ Os objetivos específicos da API incluem:
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
+1. **Documentação FASTAPI**: https://fastapi.tiangolo.com/#typer-the-fastapi-of-clis
+2. **Documentação Python 3.13**: https://docs.python.org/pt-br/3/
+3. **Documentação PostgreeSQL**: https://www.postgresql.org/docs/current/index.html
+4. **Documentação Uvicorn**: https://uvicorn.dev/
 
 # Planejamento
 
 ## Quadro de tarefas
 
-### Semana 1
+### Semanas 1-5
 
-Atualizado em: 21/04/2024
+Atualizado em: 05/10/2025
 
 | Responsável | Tarefa/Requisito      | Iniciado em | Prazo      | Status | Terminado em |
 |------------|----------------------|------------|-----------|--------|--------------|
-| AlunaX     | Introdução           | 01/02/2024 | 07/02/2024 | ✔️     | 05/02/2024   |
-| AlunaZ     | Objetivos            | 03/02/2024 | 10/02/2024 | 📝     |              |
-| AlunoY     | Histórias de usuário | 01/01/2024 | 07/01/2005 | ⌛      |              |
-| AlunoK     | Personas 1           | 01/01/2024 | 12/02/2005 | ❌     |              |
-
-### Semana 2
-
-Atualizado em: 21/04/2024
-
-| Responsável | Tarefa/Requisito | Iniciado em | Prazo      | Status | Terminado em |
-|------------|-----------------|------------|-----------|--------|--------------|
-| AlunaX     | Página inicial  | 01/02/2024 | 07/03/2024 | ✔️     | 05/02/2024   |
-| AlunaZ     | CSS unificado   | 03/02/2024 | 10/03/2024 | 📝     |              |
-| AlunoY     | Página de login | 01/02/2024 | 07/03/2024 | ⌛      |              |
-| AlunoK     | Script de login | 01/01/2024 | 12/03/2024 | ❌     |              |
+| Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga     | Documentação          | 01/09/2025 | 05/10/2025 | ⌛     | 05/10/2025   |
+| Victor Pereira     | Desenvolvimento da API (feature de Reservas de Hospedagens)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Matheus Fraga     | Desenvolvimento da API (feature de Hotéis)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Luiz Andrade     | Desenvolvimento da API (feature de Usuários/Login/Autenticação)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Gustavo Rossetti     | Desenvolvimento da API (feature de Comodidades dos Hotéis)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Victor Pereira     | Testes da API (feature de Reservas de Hospedagens)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
+| Matheus Fraga     | Testes da API (feature de Hotéis)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
+| Luiz Andrade     | Testes da API (feature de Usuários/Login/Autenticação)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
+| Gustavo Rossetti     | Testes da API (feature de Comodidades dos Hotéis)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
 
 Legenda:  
 ✔️: terminado  

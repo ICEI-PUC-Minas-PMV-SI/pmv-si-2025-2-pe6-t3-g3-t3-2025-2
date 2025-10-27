@@ -317,15 +317,82 @@ Os objetivos específicos da API incluem:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+~~[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]~~
+
+A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
+
+1. **Autenticação e Autorização**:
+O acesso aos recursos protegidos da API é controlado por meio de tokens JWT (JSON Web Tokens). Cada usuário autenticado recebe um token que contém informações de identificação e permissões, garantindo que apenas usuários autorizados possam realizar operações específicas, como criação, edição ou exclusão de reservas e avaliações.
+
+2. **Criptografia de Senhas**:
+As senhas dos usuários são criptografadas utilizando a biblioteca bcrypt, implementada através do pacote Passlib, antes de serem armazenadas no banco de dados. Isso impede que senhas sejam lidas mesmo em caso de vazamento de dados.
+
+3. **Proteção contra ataques comuns**:
+O sistema adota práticas de mitigação contra ataques frequentes em aplicações web:
+   - SQL Injection: as interações com o banco são realizadas via SQLAlchemy ORM, que abstrai as queries e evita injeções diretas.
+   - Cross-Site Scripting (XSS): validações rigorosas nos campos de entrada, utilizando Pydantic, impedem a inserção de scripts maliciosos.
+
+4. **Comunicação Segura**:
+Todas as requisições devem trafegar sob o protocolo HTTPS, garantindo a criptografia ponta a ponta dos dados enviados e recebidos entre clientes e servidores.
+
+5. **Logs e Monitoramento**:
+A API mantém registros de ações críticas, como tentativas de login, criação e cancelamento de reservas, e exclusões de dados. Isso permite rastrear atividades suspeitas e auditar o comportamento dos usuários e administradores.
+
+6. **Controle de Acesso e Permissões**:
+Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias reservas e avaliações), enquanto administradores possuem privilégios adicionais, como gerenciar hotéis e quartos. Essa separação garante o princípio do menor privilégio.
 
 ## Implantação
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.  
+~~1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.  
 2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.  
 3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.  
 4. Faça o deploy da aplicação no ambiente escolhido.  
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.~~
+
+Para a implantação da aplicação distribuída em um ambiente de produção, foram considerados os seguintes requisitos e etapas:
+1. **Requisitos de Hardware e Software**
+- Servidor (mínimo recomendado):
+   - CPU: 2 vCPUs
+   - Memória RAM: 4 GB
+   - Armazenamento: 20 GB SSD
+   - Sistema Operacional: Linux (Ubuntu Server 22.04 LTS)
+
+- Dependências de Software:
+   - Python 3.13
+   - FastAPI
+   - Uvicorn (servidor ASGI)
+   - PostgreSQL
+   - SQLAlchemy
+   - Pydantic
+   - Passlib / bcrypt
+   - Git e Virtualenv
+ 
+2. **Plataforma de Hospedagem**
+
+A aplicação pode ser hospedada em provedores de nuvem como AWS, Render, DigitalOcean, Railway, Google Cloud Platform ou Azure, permitindo escalabilidade e monitoramento integrado.
+Para ambientes menores, um VPS dedicado também é suficiente.
+
+3. **Configuração do Ambiente**
+- Criar e ativar um ambiente virtual Python (python -m venv .venv).
+- Instalar as dependências do projeto (pip install -r requirements.txt).
+- Configurar variáveis de ambiente, como:
+   - DATABASE_URL (string de conexão ao PostgreSQL)
+   - JWT_SECRET_KEY (chave secreta para geração de tokens)
+   - ENVIRONMENT (ambiente: desenvolvimento, teste ou produção)
+ 
+4. **Deploy da Aplicação**
+- Fazer o build e iniciar o servidor Uvicorn com:
+
+   `fastapi dev app/main.py`
+
+5. **Testes em Produção**
+
+Após o deploy, realizar testes de:
+- Conectividade com o banco de dados
+- Respostas dos endpoints principais (autenticação, reservas, avaliações)
+- Validação de tokens JWT
+
+Essas etapas asseguram que a aplicação funcione corretamente, de forma segura e escalável, no ambiente de produção.
 
 ## Testes
 

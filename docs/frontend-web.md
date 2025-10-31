@@ -34,6 +34,14 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Permite editar dados pessoais, cancelar reservas e enviar avaliações.
 - Possui controle de autenticação via JWT para proteger as informações.
 
+**Página de Avaliações de Hotéis**:
+
+Sistema CRUD completo para avaliações (criar, editar, excluir)
+-Componente de rating interativo com estrelas (1-5)
+-Filtro por hotel com dropdown de seleção
+-Cards de avaliação mostrando usuário, hotel, rating, comentário
+-Controle de permissões - usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
+
 6. **Painel Administrativo**:
 - Exclusivo para usuários com permissão de administrador.
 - Permite cadastrar e editar hotéis, quartos e visualizar estatísticas.
@@ -108,27 +116,14 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
 
-### Semana 1
-
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
-#### Semana 2
-
-Atualizado em: 21/04/2024
+Atualizado em: 31/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Gustavo Rossetti        | Feature Avaliação   |  06/10/25    | 02/11/25 | ✔️    | 31/10/2025      |
 
 Legenda:
 - ✔️: terminado

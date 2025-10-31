@@ -294,6 +294,9 @@ Atualizado em: 31/08/2025
 | Matheus Fraga                                | Documentação das tecnologias utilizadas       | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Matheus Fraga                                | Adição de referências ao problema             | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
 | Victor Henrique                              | README.md                                     | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Gustavo Rossetti                             | Revisão dos RNF                               | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+| Gustavo Rossetti                             | Criação dos slides                            | 01/08/2025  | 31/08/2025 |   ✔️    |  31/08/2025  |
+
 
 Legenda:
 

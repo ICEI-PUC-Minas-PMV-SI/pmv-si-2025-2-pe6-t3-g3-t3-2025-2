@@ -29,7 +29,7 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Permite ao usuário confirmar a reserva e selecionar o método de pagamento.
 - Inclui mensagens de sucesso e redirecionamento após conclusão.
 
-**Página de Avaliações de Hotéis**:
+5. **Página de Avaliações de Hotéis**:
 
 Sistema CRUD completo para avaliações (criar, editar, excluir)
 -Componente de rating interativo com estrelas (1-5)

@@ -29,11 +29,6 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Permite ao usuário confirmar a reserva e selecionar o método de pagamento.
 - Inclui mensagens de sucesso e redirecionamento após conclusão.
 
-5. **Área do Usuário (Dashboard)**:
-- Exibe as reservas ativas e passadas do usuário.
-- Permite editar dados pessoais, cancelar reservas e enviar avaliações.
-- Possui controle de autenticação via JWT para proteger as informações.
-
 **Página de Avaliações de Hotéis**:
 
 Sistema CRUD completo para avaliações (criar, editar, excluir)
@@ -41,6 +36,11 @@ Sistema CRUD completo para avaliações (criar, editar, excluir)
 -Filtro por hotel com dropdown de seleção
 -Cards de avaliação mostrando usuário, hotel, rating, comentário
 -Controle de permissões - usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
+
+5. **Área do Usuário (Dashboard)**:
+- Exibe as reservas ativas e passadas do usuário.
+- Permite editar dados pessoais, cancelar reservas e enviar avaliações.
+- Possui controle de autenticação via JWT para proteger as informações.
 
 6. **Painel Administrativo**:
 - Exclusivo para usuários com permissão de administrador.

@@ -30,12 +30,11 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Inclui mensagens de sucesso e redirecionamento após conclusão.
 
 5. **Página de Avaliações de Hotéis**:
+- Sistema CRUD completo para avaliações (buscar, criar, editar e excluir)
+- Componente de Rating interativo com as estrelas (1 a 5)
+- filtro por hotel ou ver todas as avaliações
+- usuarios podem editar suas próprias avaliações, admins podem excluir qualquer uma
 
-Sistema CRUD completo para avaliações (criar, editar, excluir)
--Componente de rating interativo com estrelas (1-5)
--Filtro por hotel com dropdown de seleção
--Cards de avaliação mostrando usuário, hotel, rating, comentário
--Controle de permissões - usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
 
 5. **Área do Usuário (Dashboard)**:
 - Exibe as reservas ativas e passadas do usuário.

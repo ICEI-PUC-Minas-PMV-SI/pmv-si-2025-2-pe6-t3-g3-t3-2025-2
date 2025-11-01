@@ -32,16 +32,15 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 5. **Página de Avaliações de Hotéis**:
 - Sistema CRUD completo para avaliações (buscar, criar, editar e excluir)
 - Componente de Rating interativo com as estrelas (1 a 5)
-- filtro por hotel ou ver todas as avaliações
-- usuarios podem editar suas próprias avaliações, admins podem excluir qualquer uma
+- Filtro por hotel ou ver todas as avaliações
+- Usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
 
-
-5. **Área do Usuário (Dashboard)**:
+6. **Área do Usuário (Dashboard)**:
 - Exibe as reservas ativas e passadas do usuário.
 - Permite editar dados pessoais, cancelar reservas e enviar avaliações.
 - Possui controle de autenticação via JWT para proteger as informações.
 
-6. **Painel Administrativo**:
+7. **Painel Administrativo**:
 - Exclusivo para usuários com permissão de administrador.
 - Permite cadastrar e editar hotéis, quartos e visualizar estatísticas.
 
@@ -53,6 +52,12 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 
 <img width="400" alt="wireframe" src="https://github.com/user-attachments/assets/7141c46a-0eac-4c02-ae32-2c25b9a6d33a" />
 <img width="400" alt="wireframe2" src="https://github.com/user-attachments/assets/146e7a82-3f10-426d-a3a2-25001655b419" />
+
+---
+**Página de Avaliações de Hotéis**
+
+<img width="400" alt="wireframeRosetti" src="https://github.com/user-attachments/assets/5d09f88c-1a80-440f-bc5f-9ea7fb333d27" />
+<img width="400"  alt="wireframeRosetti2" src="https://github.com/user-attachments/assets/7a3fd0e8-e0b3-43d2-8715-5511fd0e439b" />
 
 
 ### Design Visual
@@ -107,7 +112,9 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
+1. **Documentação React Native**: https://reactnative.dev/docs/getting-started
+2. **Documentação TailWind CSS**: https://v2.tailwindcss.com/docs
 
 # Planejamento
 
@@ -123,6 +130,7 @@ Atualizado em: 31/10/2025
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
 | AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
 | Gustavo Rossetti        | Feature Avaliação   |  06/10/25    | 02/11/25 | ✔️    | 31/10/2025      |
+| Victor Pereira       | Feature Reservas   |  06/10/25    | 02/11/25 | ✔️    | 01/11/2025      |
 
 Legenda:
 - ✔️: terminado

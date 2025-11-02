@@ -42,8 +42,6 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 
 ### Wireframes
 
-~~[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]~~
-
 **Página de Reservas**
 
 <img width="400" alt="wireframe" src="https://github.com/user-attachments/assets/7141c46a-0eac-4c02-ae32-2c25b9a6d33a" />
@@ -95,7 +93,6 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 
 ## Tecnologias Utilizadas
-~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
 
 **Backend:** [FastAPI (Python)](https://fastapi.tiangolo.com/)  
 - Framework leve e moderno, com suporte nativo a APIs RESTful.  
@@ -109,15 +106,13 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 - Simula endpoints de pagamento para testes de integração.  
 - Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
 
-**Cli https:** [mmar](https://github.com/yusuf-musleh/mmar/blob/master/README.md) 
+**Tunnel Mmar:** [mmar](https://github.com/yusuf-musleh/mmar/blob/master/README.md) 
 - plataforma sem dependência que expõe uma URL https a partir do seu localhost para testes envolvendo cookies.
 - ocultação da porta usada pelo localhost.
 
 
 
 ## Considerações de Segurança
-
-~~[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]~~
 
 A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
 
@@ -153,13 +148,6 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
 
 ## Testes
 
-~~[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]~~
-
-~~1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.~~
 
 - **Feature Usuários**
   
@@ -215,7 +203,7 @@ Atualizado em: 02/11/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga       | Documentação   | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
-| Matheus Fraga        | Feature Hotéis   | 06/10/2025     | 02/11/2025 | ✔️    |     02/11/2025            |
+| Matheus Fraga        | Feature Hotéis e Comodidades   | 06/10/2025     | 02/11/2025 | ✔️    |     02/11/2025            |
 | Luiz Andrade        | Feature Usuários e Autenticação  | 06/10/2025    | 02/11/2025 | ✔️    |     22/10/2025            |
 | Gustavo Rossetti        | Feature Avaliação   |  06/10/2025    | 02/11/2025 | ✔️    | 31/10/2025      |
 | Victor Pereira       | Feature Reservas   |  06/10/2025    | 02/11/2025 | ✔️    | 01/11/2025      |

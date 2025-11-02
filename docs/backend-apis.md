@@ -27,20 +27,22 @@ Os objetivos específicos da API incluem:
 
 ## Modelagem da Aplicação
 
-~~[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]~~
-
+- **Diagrama de Classes:**
 
 <img width="700" height="827" alt="diagram2" src="https://github.com/user-attachments/assets/791ee2e4-296b-408b-907e-ae66dd41276e" />
 
 ---
+- **Fluxo de login do usuário:**
 
 <img width="420" alt="diagram1" src="https://github.com/user-attachments/assets/77014f78-4a81-4fb4-b52c-881b21aca1e1" />
 
 ---
+- **Fluxo de criação de reserva de quartos:**
 
 <img width="550" height="552" alt="diagram3" src="https://github.com/user-attachments/assets/58264655-bb22-41b9-944e-86f4f5e53d76" />
 
 ---
+- **Modelagem Entidade-Relacionamento:**
 
 <img width="600" height="792" alt="diagram4" src="https://github.com/user-attachments/assets/0e62d23e-9380-488b-a3ba-d056859b455e" />
 
@@ -427,15 +429,15 @@ Atualizado em: 05/10/2025
 
 | Responsável | Tarefa/Requisito      | Iniciado em | Prazo      | Status | Terminado em |
 |------------|----------------------|------------|-----------|--------|--------------|
-| Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga     | Documentação          | 01/09/2025 | 05/10/2025 | ⌛     | 05/10/2025   |
+| Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga     | Documentação          | 01/09/2025 | 05/10/2025 | ✔️    | 05/10/2025   |
 | Victor Pereira     | Desenvolvimento da API (feature de Reservas de Hospedagens)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
-| Matheus Fraga     | Desenvolvimento da API (feature de Hotéis)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Matheus Fraga     | Desenvolvimento da API (feature de Hotéis e Comodidades)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
 | Luiz Andrade     | Desenvolvimento da API (feature de Usuários/Login/Autenticação)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
-| Gustavo Rossetti     | Desenvolvimento da API (feature de Comodidades dos Hotéis)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
+| Gustavo Rossetti     | Desenvolvimento da API (feature de Feedbacks)          | 01/09/2025 | 28/09/2025 | ✔️     | 05/10/2025   |
 | Victor Pereira     | Testes da API (feature de Reservas de Hospedagens)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
-| Matheus Fraga     | Testes da API (feature de Hotéis)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
+| Matheus Fraga     | Testes da API (feature de Hotéis e Comodidades)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
 | Luiz Andrade     | Testes da API (feature de Usuários/Login/Autenticação)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
-| Gustavo Rossetti     | Testes da API (feature de Comodidades dos Hotéis)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
+| Gustavo Rossetti     | Testes da API (feature de Feedbacks)          | 28/09/2025 | 05/10/2025 | ✔️     | 05/10/2025   |
 
 Legenda:  
 ✔️: terminado  

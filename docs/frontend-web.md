@@ -17,8 +17,8 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Filtros laterais permitem refinar a busca (por preço, avaliação, comodidades etc.).
 
 3. **Página de Detalhes do Hotel**:
-- Exibe imagens em carrossel, descrição completa, tipo de quartos disponíveis e avaliações de outros usuários.
-- Contém botões de ação como “Reservar Agora” e “Adicionar aos Favoritos”.
+- Descrição completa, tipo de quartos disponíveis e avaliações de outros usuários.
+- Contém botões de ação como “Reservar Agora”.
 
 4. **Página de Reserva**:
 - Mostra os detalhes do quarto selecionado, datas da estadia e valor total.
@@ -35,10 +35,6 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Exibe as reservas ativas e passadas do usuário.
 - Permite editar dados pessoais, cancelar reservas e enviar avaliações.
 - Possui controle de autenticação via JWT para proteger as informações.
-
-7. **Painel Administrativo**:
-- Exclusivo para usuários com permissão de administrador.
-- Permite cadastrar e editar hotéis, quartos e visualizar estatísticas.
 
 ### Wireframes
 

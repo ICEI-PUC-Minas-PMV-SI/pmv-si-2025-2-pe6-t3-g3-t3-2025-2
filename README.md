@@ -1,6 +1,7 @@
 # Aluga aí
 
-![Logo](docs/img/logo.png)
+<img width="350" alt="logo" src="https://github.com/user-attachments/assets/101e6ccb-a5a2-4d3b-b17a-eaee959ddbfd" />
+
 
 `CURSO: Sistemas de Informação`
 
@@ -38,7 +39,9 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+* **Backend:** [Repositório do Backend](https://github.com/matheusfraga-tech/aluga-api-backend/)
+* **Frontend:** [Repositório do Frontend](https://github.com/Andradev101/aluga-api-frontend)
+* **Código Fonte:** [Código Fonte](src/README.md)
 
 # Apresentação
 

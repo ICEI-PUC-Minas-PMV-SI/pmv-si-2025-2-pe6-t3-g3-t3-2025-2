@@ -102,19 +102,52 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+~~[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]~~
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
+~~1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
 2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
 3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.~~
+
+- **Feature Reservas**
+  
+  --*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos*
+  
+  --*RF-002:	Integrar meios de pagamento (simulado ou real)*
+
+<img width="600" alt="TesteReservas" src="https://github.com/user-attachments/assets/22b03a80-3b17-48b1-a053-6d324e75fab7" />
+
+<img width="600" alt="TesteReservas2" src="https://github.com/user-attachments/assets/9cc73109-0645-4b9d-b4f5-9513fcd9519e" />
+
+<img width="600" alt="TesteReservas3" src="https://github.com/user-attachments/assets/8d8c650e-1a24-43a0-a831-1652d2de0ba4" />
+
+- **Feature Reviews**
+  
+  --*RF-00:	*
+  
+  --*RF-00:	*
+
+<img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
+
+- **Feature Usuários**
+- 
+  --*RF-00:	*
+  
+  --*RF-00:	*
+
+<img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
+
 
 # Referências
 
 ~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
 1. **Documentação React Native**: https://reactnative.dev/docs/getting-started
 2. **Documentação TailWind CSS**: https://v2.tailwindcss.com/docs
+3. **Repositório Mmar**: https://github.com/yusuf-musleh/mmar
+4. **Documentação FASTAPI**: https://fastapi.tiangolo.com/#typer-the-fastapi-of-clis
+5. **Documentação Python 3.13**: https://docs.python.org/pt-br/3/
+6. **Documentação PostgreeSQL**: https://www.postgresql.org/docs/current/index.html
 
 # Planejamento
 
@@ -126,11 +159,11 @@ Atualizado em: 31/10/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
+| Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga       | Documentação   | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| Gustavo Rossetti        | Feature Avaliação   |  06/10/25    | 02/11/25 | ✔️    | 31/10/2025      |
-| Victor Pereira       | Feature Reservas   |  06/10/25    | 02/11/25 | ✔️    | 01/11/2025      |
+| Luiz Andrade        | Feature Usuários e Autenticação  | 06/10/2025    | 02/11/2025 | ✔️    |     22/10/2025            |
+| Gustavo Rossetti        | Feature Avaliação   |  06/10/2025    | 02/11/2025 | ✔️    | 31/10/2025      |
+| Victor Pereira       | Feature Reservas   |  06/10/2025    | 02/11/2025 | ✔️    | 01/11/2025      |
 
 Legenda:
 - ✔️: terminado

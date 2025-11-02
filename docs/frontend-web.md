@@ -274,6 +274,17 @@ Teste:
 
 ---
 
+
+- **Feature Hotéis**
+
+- *RF-012a: Permitir o cadastro de um novo hotel com informações básicas.*
+
+- RF-012d: Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação.
+
+<img width="800" alt="TesteUsarios" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/088c917737f0de3dd3913934d9c29fd9282ee37e/docs/img/Captura%20de%20tela%202025-11-02%20191952.png" />
+
+---
+
 - **Feature Reservas**
   
   -*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos.*

@@ -92,19 +92,25 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
 
-1. **Autenticação e Autorização**: O acesso aos recursos protegidos da API é controlado por meio de tokens JWT (JSON Web Tokens) e Cookies. Cada usuário autenticado recebe um token que contém informações de identificação e permissões, garantindo que apenas usuários autorizados possam realizar operações específicas, como criação, edição ou exclusão de reservas e avaliações.
+1. **Autenticação e Autorização**:
+O acesso aos recursos protegidos da API é controlado por meio de tokens JWT (JSON Web Tokens) e Cookies. Cada usuário autenticado recebe um token que contém informações de identificação e permissões, garantindo que apenas usuários autorizados possam realizar operações específicas, como criação, edição ou exclusão de reservas e avaliações.
 
-2. **Criptografia de Senhas**: As senhas dos usuários são criptografadas utilizando a biblioteca bcrypt, implementada através do pacote Passlib, antes de serem armazenadas no banco de dados. Isso impede que senhas sejam lidas mesmo em caso de vazamento de dados.
+2. **Criptografia de Senhas**:
+As senhas dos usuários são criptografadas utilizando a biblioteca bcrypt, implementada através do pacote Passlib, antes de serem armazenadas no banco de dados. Isso impede que senhas sejam lidas mesmo em caso de vazamento de dados.
 
-3. **Proteção contra ataques comuns**: O sistema adota práticas de mitigação contra ataques frequentes em aplicações web:
+3. **Proteção contra ataques comuns**:
+O sistema adota práticas de mitigação contra ataques frequentes em aplicações web:
+   - SQL Injection: as interações com o banco são realizadas via SQLAlchemy ORM, que abstrai as queries e evita injeções diretas.
+   - Cross-Site Scripting (XSS): validações rigorosas nos campos de entrada, utilizando Pydantic, impedem a inserção de scripts maliciosos.
 
-4. **SQL Injection**: as interações com o banco são realizadas via SQLAlchemy ORM, que abstrai as queries e evita injeções diretas.
-  - Cross-Site Scripting (XSS): validações rigorosas nos campos de entrada, utilizando Pydantic, impedem a inserção de scripts maliciosos.
-  - Comunicação Segura: Todas as requisições devem trafegar sob o protocolo HTTPS, garantindo a criptografia ponta a ponta dos dados enviados e recebidos entre clientes e servidores.
+4. **Comunicação Segura**:
+Todas as requisições devem trafegar sob o protocolo HTTPS, garantindo a criptografia ponta a ponta dos dados enviados e recebidos entre clientes e servidores.
 
-5. **Logs e Monitoramento**: A API mantém registros de ações críticas, como tentativas de login, criação e cancelamento de reservas, e exclusões de dados. Isso permite rastrear atividades suspeitas e auditar o comportamento dos usuários e administradores.
+5. **Logs e Monitoramento**:
+A API mantém registros de ações críticas, como tentativas de login, criação e cancelamento de reservas, e exclusões de dados. Isso permite rastrear atividades suspeitas e auditar o comportamento dos usuários e administradores.
 
-6. **Controle de Acesso e Permissões**: Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias reservas e avaliações), enquanto administradores possuem privilégios adicionais, como gerenciar hotéis e quartos. Essa separação garante o princípio do menor privilégio.
+6. **Controle de Acesso e Permissões**:
+Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias reservas e avaliações), enquanto administradores possuem privilégios adicionais, como gerenciar hotéis e quartos. Essa separação garante o princípio do menor privilégio.
 
 ## Implantação
 

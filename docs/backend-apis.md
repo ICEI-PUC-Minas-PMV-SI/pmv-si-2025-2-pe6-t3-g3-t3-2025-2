@@ -27,7 +27,22 @@ Os objetivos específicos da API incluem:
 
 ## Modelagem da Aplicação
 
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+~~[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]~~
+
+
+<img width="700" height="827" alt="diagram2" src="https://github.com/user-attachments/assets/791ee2e4-296b-408b-907e-ae66dd41276e" />
+
+---
+
+<img width="420" alt="diagram1" src="https://github.com/user-attachments/assets/77014f78-4a81-4fb4-b52c-881b21aca1e1" />
+
+---
+
+<img width="600" height="552" alt="diagram3" src="https://github.com/user-attachments/assets/58264655-bb22-41b9-944e-86f4f5e53d76" />
+
+---
+
+<img width="650" height="792" alt="diagram4" src="https://github.com/user-attachments/assets/0e62d23e-9380-488b-a3ba-d056859b455e" />
 
 ## Tecnologias Utilizadas
 
@@ -317,8 +332,6 @@ Os objetivos específicos da API incluem:
 
 ## Considerações de Segurança
 
-~~[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]~~
-
 A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
 
 1. **Autenticação e Autorização**:
@@ -343,13 +356,8 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
 
 ## Implantação
 
-~~1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.  
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.  
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.  
-4. Faça o deploy da aplicação no ambiente escolhido.  
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.~~
-
 Para a implantação da aplicação distribuída em um ambiente de produção, foram considerados os seguintes requisitos e etapas:
+
 1. **Requisitos de Hardware e Software**
 - Servidor (mínimo recomendado):
    - CPU: 2 vCPUs
@@ -404,7 +412,6 @@ Essas etapas asseguram que a aplicação funcione corretamente, de forma segura 
 
 # Referências
 
-~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
 1. **Documentação FASTAPI**: https://fastapi.tiangolo.com/#typer-the-fastapi-of-clis
 2. **Documentação Python 3.13**: https://docs.python.org/pt-br/3/
 3. **Documentação PostgreeSQL**: https://www.postgresql.org/docs/current/index.html

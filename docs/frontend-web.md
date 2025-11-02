@@ -1,12 +1,8 @@
 # Front-end Web
 
-~~[Inclua uma breve descrição do projeto e seus objetivos.]~~
-
 O Front-end Web da plataforma tem como principal objetivo oferecer uma interface **moderna, intuitiva e responsiva** que facilite a interação entre o usuário e os serviços disponibilizados pela API. O sistema busca proporcionar uma experiência fluida, segura e acessível, permitindo que hóspedes, administradores e gerentes de hotéis interajam com as funcionalidades do sistema de forma simples e eficiente.
 
 ## Projeto da Interface Web
-
-~~[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]~~
 
 O projeto da interface foi elaborado com foco em **usabilidade e experiência do usuário (UX)**, seguindo boas práticas de design responsivo e interatividade. A aplicação foi dividida em módulos visuais correspondentes aos principais fluxos do sistema:
 
@@ -46,7 +42,7 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+~~[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]~~
 
 **Página de Reservas**
 
@@ -61,8 +57,6 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 
 
 ### Design Visual
-
-~~[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]~~
 
 O design da aplicação foi pensado para oferecer uma experiência agradável, moderna e intuitiva em todos os dispositivos. Utilizando **React Native com Expo**, o objetivo é garantir uma interface **multiplataforma**, funcionando de forma fluida tanto em Android quanto em iOS, a partir de uma única base de código.
 
@@ -136,11 +130,11 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
   
 -*RF-003: Facilitar o cadastro de usuários com dados pessoais válidos.*
   
--*RF-004:	Garantir idade mínima de 18 anos no cadastro.*
+-*RF-004: Garantir idade mínima de 18 anos no cadastro.*
 
--*RF-005:	Validar complexidade mínima de senhas.*
+-*RF-005: Validar complexidade mínima de senhas.*
   
--*RF-006:	Validar e-mail e número de celular durante o cadastro.*
+-*RF-006: Validar e-mail e número de celular durante o cadastro.*
 
 <img width="800" alt="TesteUsarios" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
 
@@ -148,9 +142,9 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
 
 - **Feature Reservas**
   
-  -*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos*
+  -*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos.*
   
-  -*RF-002:	Integrar meios de pagamento (simulado ou real)*
+  -*RF-002:	Integrar meios de pagamento (simulado ou real).*
 
 <img width="800" alt="TesteReservas" src="https://github.com/user-attachments/assets/22b03a80-3b17-48b1-a053-6d324e75fab7" />
 
@@ -164,7 +158,7 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
 
 - **Feature Reviews**
   
--*RF-011	Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
+-*RF-011: Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
   
 <img width="800" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
 

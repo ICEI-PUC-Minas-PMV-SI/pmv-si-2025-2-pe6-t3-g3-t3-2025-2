@@ -84,11 +84,27 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+~~[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]~~
+
+A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
+
+1. **Autenticação e Autorização**: O acesso aos recursos protegidos da API é controlado por meio de tokens JWT (JSON Web Tokens) e Cookies. Cada usuário autenticado recebe um token que contém informações de identificação e permissões, garantindo que apenas usuários autorizados possam realizar operações específicas, como criação, edição ou exclusão de reservas e avaliações.
+
+2. **Criptografia de Senhas**: As senhas dos usuários são criptografadas utilizando a biblioteca bcrypt, implementada através do pacote Passlib, antes de serem armazenadas no banco de dados. Isso impede que senhas sejam lidas mesmo em caso de vazamento de dados.
+
+3. **Proteção contra ataques comuns**: O sistema adota práticas de mitigação contra ataques frequentes em aplicações web:
+
+4. **SQL Injection**: as interações com o banco são realizadas via SQLAlchemy ORM, que abstrai as queries e evita injeções diretas.
+  - Cross-Site Scripting (XSS): validações rigorosas nos campos de entrada, utilizando Pydantic, impedem a inserção de scripts maliciosos.
+  - Comunicação Segura: Todas as requisições devem trafegar sob o protocolo HTTPS, garantindo a criptografia ponta a ponta dos dados enviados e recebidos entre clientes e servidores.
+
+5. **Logs e Monitoramento**: A API mantém registros de ações críticas, como tentativas de login, criação e cancelamento de reservas, e exclusões de dados. Isso permite rastrear atividades suspeitas e auditar o comportamento dos usuários e administradores.
+
+6. **Controle de Acesso e Permissões**: Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias reservas e avaliações), enquanto administradores possuem privilégios adicionais, como gerenciar hotéis e quartos. Essa separação garante o princípio do menor privilégio.
 
 ## Implantação
 
@@ -110,44 +126,44 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.~~
 
+- **Feature Usuários**
+  
+-*RF-003: Facilitar o cadastro de usuários com dados pessoais válidos.*
+  
+-*RF-004:	Garantir idade mínima de 18 anos no cadastro.*
+
+-*RF-005:	Validar complexidade mínima de senhas.*
+  
+-*RF-006:	Validar e-mail e número de celular durante o cadastro.*
+
+<img width="800" alt="TesteUsarios" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
+
+---
+
 - **Feature Reservas**
   
-  --*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos*
+  -*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos*
   
-  --*RF-002:	Integrar meios de pagamento (simulado ou real)*
+  -*RF-002:	Integrar meios de pagamento (simulado ou real)*
 
-<img width="600" alt="TesteReservas" src="https://github.com/user-attachments/assets/22b03a80-3b17-48b1-a053-6d324e75fab7" />
+<img width="800" alt="TesteReservas" src="https://github.com/user-attachments/assets/22b03a80-3b17-48b1-a053-6d324e75fab7" />
 
-<img width="600" alt="TesteReservas2" src="https://github.com/user-attachments/assets/9cc73109-0645-4b9d-b4f5-9513fcd9519e" />
 
-<img width="600" alt="TesteReservas3" src="https://github.com/user-attachments/assets/8d8c650e-1a24-43a0-a831-1652d2de0ba4" />
+<img width="800" alt="TesteReservas2" src="https://github.com/user-attachments/assets/9cc73109-0645-4b9d-b4f5-9513fcd9519e" />
+
+
+<img width="800" alt="TesteReservas3" src="https://github.com/user-attachments/assets/8d8c650e-1a24-43a0-a831-1652d2de0ba4" />
 
 ---
 
 - **Feature Reviews**
   
---*RF-011	Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
+-*RF-011	Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
   
-<img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
-
----
-
-- **Feature Usuários**
-  
---*RF-003: Facilitar o cadastro de usuários com dados pessoais válidos.*
-  
---*RF-004:	Garantir idade mínima de 18 anos no cadastro.*
-
---*RF-005:	Validar complexidade mínima de senhas.*
-  
---*RF-006:	Validar e-mail e número de celular durante o cadastro.*
-
-<img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
-
+<img width="800" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
 
 # Referências
 
-~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
 1. **Documentação React Native**: https://reactnative.dev/docs/getting-started
 2. **Documentação TailWind CSS**: https://v2.tailwindcss.com/docs
 3. **Repositório Mmar**: https://github.com/yusuf-musleh/mmar
@@ -159,14 +175,12 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
-
-Atualizado em: 31/10/2025
+Atualizado em: 02/11/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga       | Documentação   | 06/10/2025     | 02/11/2025 | ✔️    | 02/11/2025      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
+| Matheus Fraga        | Feature Hotéis   | 06/10/2025     | 02/11/2025 | ✔️    |     02/11/2025            |
 | Luiz Andrade        | Feature Usuários e Autenticação  | 06/10/2025    | 02/11/2025 | ✔️    |     22/10/2025            |
 | Gustavo Rossetti        | Feature Avaliação   |  06/10/2025    | 02/11/2025 | ✔️    | 31/10/2025      |
 | Victor Pereira       | Feature Reservas   |  06/10/2025    | 02/11/2025 | ✔️    | 01/11/2025      |
@@ -176,4 +190,3 @@ Legenda:
 - 📝: em execução
 - ⌛: atrasado
 - ❌: não iniciado
-

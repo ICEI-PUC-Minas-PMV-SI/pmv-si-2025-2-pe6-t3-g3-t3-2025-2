@@ -1,6 +1,8 @@
 # Aluga aí
 
-<img width="350" alt="logo" src="https://github.com/user-attachments/assets/101e6ccb-a5a2-4d3b-b17a-eaee959ddbfd" />
+<p align="center">
+  <img width="350" alt="logo" src="https://github.com/user-attachments/assets/101e6ccb-a5a2-4d3b-b17a-eaee959ddbfd" />
+</p>
 
 
 `CURSO: Sistemas de Informação`

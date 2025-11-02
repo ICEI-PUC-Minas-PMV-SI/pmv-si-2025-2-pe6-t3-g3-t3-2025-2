@@ -38,11 +38,11 @@ Os objetivos específicos da API incluem:
 
 ---
 
-<img width="600" height="552" alt="diagram3" src="https://github.com/user-attachments/assets/58264655-bb22-41b9-944e-86f4f5e53d76" />
+<img width="550" height="552" alt="diagram3" src="https://github.com/user-attachments/assets/58264655-bb22-41b9-944e-86f4f5e53d76" />
 
 ---
 
-<img width="650" height="792" alt="diagram4" src="https://github.com/user-attachments/assets/0e62d23e-9380-488b-a3ba-d056859b455e" />
+<img width="600" height="792" alt="diagram4" src="https://github.com/user-attachments/assets/0e62d23e-9380-488b-a3ba-d056859b455e" />
 
 ## Tecnologias Utilizadas
 

@@ -75,10 +75,45 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+  O diagrama de arquitetura abaixo foi desenvolvido com base no **estilo arquitetural baseado em serviços (SOA - Service-Oriented Architecture)**. Esse estilo foi escolhido para garantir:
+
+  - **Desacoplamento** entre módulos, facilitando alterações futuras.
+  - **Manutenabilidade**, permitindo atualização ou substituição de componentes sem afetar todo o sistema.
+  - **Extensibilidade**, possibilitando a inclusão de novos serviços conforme o crescimento do projeto.
+  - **Segurança e robustez**, assegurando que os dados dos usuários e transações sejam protegidos.
+  - **Experiência do usuário de qualidade**, com respostas rápidas e confiáveis.
+
+![diagrama de arquitetura](img/diagrams/solution-architecture.svg)
+
+  O sistema é dividido em três camadas principais:
+
+  1. **Frontend**: Responsável pela interface do usuário, interação e captura de dados.
+  2. **Backend**: Processamento das regras de negócio, gerenciamento de reservas, autenticação, pagamentos e serviços relacionados.
+  3. **Banco de Dados**: Armazenamento de informações persistentes, incluindo usuários, reservas, hotéis e transações.
+
+
+
 
 ## Tecnologias Utilizadas
 ~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
+
+**Backend:** [FastAPI (Python)](https://fastapi.tiangolo.com/)  
+- Framework leve e moderno, com suporte nativo a APIs RESTful.  
+- Alta performance e facilidade de integração com bancos de dados e autenticação.  
+
+**Frontend:** [React Native + Expo](https://docs.expo.dev/)  
+- Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.  
+- Facilita criação de interfaces responsivas e interativas.  
+
+**Mock de sistema de pagamento:** [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)  
+- Simula endpoints de pagamento para testes de integração.  
+- Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
+
+**Cli https:** [mmar](https://github.com/yusuf-musleh/mmar/blob/master/README.md) 
+- plataforma sem dependência que expõe uma URL https a partir do seu localhost para testes envolvendo cookies.
+- ocultação da porta usada pelo localhost.
+
+
 
 ## Considerações de Segurança
 

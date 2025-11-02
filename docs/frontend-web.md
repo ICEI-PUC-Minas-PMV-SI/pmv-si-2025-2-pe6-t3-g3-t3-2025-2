@@ -68,9 +68,9 @@ O design da aplicação foi pensado para oferecer uma experiência agradável, m
 
 O estilo visual segue uma linha **minimalista e funcional**, priorizando clareza e conforto visual. A paleta de cores combina:
 - Azul-escuro (**#1E3A8A**) para transmitir confiança
-- Amarelo (**#FBBF24**) para destacar ações importantes
+- Laranja (**#F27F12**) para destacar ações importantes
 - Além de branco (**#FFFFFF**) e cinza-claro (**#F3F4F6**) como base neutra.
-<img width="600" alt="Paleta" src="https://github.com/user-attachments/assets/119f77a8-7ad4-4b76-b575-1da4f737153e" />
+<img width="600" alt="Paleta" src="https://github.com/user-attachments/assets/f33ef05f-f453-4e52-bcdc-9f3d7c10ac8f" />
 
 A **tipografia** principal é *Poppins* (ou *Roboto*, conforme o sistema), com tamanhos e pesos adaptados para boa leitura em telas pequenas.
 
@@ -122,19 +122,25 @@ A aplicação também segue boas práticas de **acessibilidade**, como contraste
 
 <img width="600" alt="TesteReservas3" src="https://github.com/user-attachments/assets/8d8c650e-1a24-43a0-a831-1652d2de0ba4" />
 
+---
+
 - **Feature Reviews**
   
-  --*RF-00:	*
+--*RF-011	Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
   
-  --*RF-00:	*
-
 <img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
 
+---
+
 - **Feature Usuários**
-- 
-  --*RF-00:	*
   
-  --*RF-00:	*
+--*RF-003: Facilitar o cadastro de usuários com dados pessoais válidos.*
+  
+--*RF-004:	Garantir idade mínima de 18 anos no cadastro.*
+
+--*RF-005:	Validar complexidade mínima de senhas.*
+  
+--*RF-006:	Validar e-mail e número de celular durante o cadastro.*
 
 <img width="600" alt="TesteReviews" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
 

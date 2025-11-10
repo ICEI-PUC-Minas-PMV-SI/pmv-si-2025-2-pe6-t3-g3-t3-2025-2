@@ -1,17 +1,44 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+<ins>[Inclua uma breve descrição do projeto e seus objetivos.]</ins>
+
+O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **interface intuitiva e responsiva** que facilite a interação entre o usuário e os serviços hoteleiros em dispositivos **Android e iOS**. O sistema busca proporcionar uma **experiência fluida, segura e acessível**, permitindo que hóspedes realizem buscas, reservas e avaliações de hotéis de forma prática diretamente de seus smartphones.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+<ins>[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]</ins>
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+<ins>[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]</ins>
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+<ins>[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]</ins>
+
+O design da aplicação móvel foi desenvolvido para oferecer uma experiência moderna, intuitiva e visualmente agradável em dispositivos móveis. Utilizando **React Native com Expo**, a interface segue princípios de design mobile-first, priorizando **usabilidade, performance e adaptação a diferentes tamanhos de tela**.
+
+A **paleta de cores** foi cuidadosamente selecionada para transmitir confiança, profissionalismo e destacar elementos interativos:
+
+  - **Azul-escuro (#1E3A8A):** Cor primária, utilizada em headers, botões principais e elementos de destaque, transmitindo confiança e estabilidade.
+  - **Laranja (#F27F12):** Para destacar ações importantes.
+  - **Branco (#FFFFFF):** Background principal, proporcionando clareza e espaçamento visual.
+  - **Cinza-claro (#F3F4F6):** Background secundário para separação de seções e cards.
+  - **Verde (#10B981):** Feedbacks positivos, confirmações e status "ativo".
+  - **Vermelho (#EF4444):** Alertas, erros e ações de cancelamento.
+  - **Amarelo (#F59E0B):** Sistema de avaliação (estrelas) e avisos.
+<img width="900" alt="paleta" src="https://github.com/user-attachments/assets/3012ca89-dce0-462f-95ac-fbd436c06f27" />
+
+
+A **tipografia** foi escolhida para garantir uma boa legibilidade em telas pequenas e diferentes resoluções:
+ - Poppins / Roboto (conforme o sistema), com tamanhos e pesos adaptados para boa leitura em telas pequenas.
+<img width="400" alt="TIPOGRAFIA" src="https://github.com/user-attachments/assets/1277d0d7-2df7-4ce2-a402-a8c9ea3792da" />
+
+Principais **ícones** utilizados:
+  - 🏠 Home / Início
+  - 🔍 Buscar
+  - 📋 Minhas Reservas
+  - ⭐ Avaliação
+  - 📅 Calendário
 
 ## Fluxo de Dados
 
@@ -19,7 +46,7 @@
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+<ins>[Lista das tecnologias principais que serão utilizadas no projeto.]</ins>
 
 ## Considerações de Segurança
 

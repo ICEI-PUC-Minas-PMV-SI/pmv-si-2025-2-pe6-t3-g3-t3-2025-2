@@ -11,6 +11,14 @@ O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **inte
 
 <ins>[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]</ins>
 
+<p align="center">
+<strong>Finalizar Reserva / Minhas Reservas:</strong><br>
+  
+<img width="500" alt="wireframes reservas2" src="https://github.com/user-attachments/assets/70ab5481-5a72-4642-b71d-0ebf05e7ba57">
+</p>
+
+
+
 ### Design Visual
 
 <ins>[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]</ins>

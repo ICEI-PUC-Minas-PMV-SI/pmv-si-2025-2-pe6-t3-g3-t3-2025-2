@@ -19,12 +19,42 @@ As interações foram desenvolvidas para serem intuitivas, com feedbacks visuais
 ~~[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]~~
 
 <p align="center">
-<strong>Finalizar Reserva / Minhas Reservas:</strong><br>
+<strong>Página Inicial (deslogado) / Página Inicial (logado)</strong><br>
+  
+<img width="500" alt="homepage" src="https://github.com/user-attachments/assets/a329eb42-5e48-4406-a33b-6596513e6860" />
+</p>
+
+---
+
+<p align="center">
+<strong>Cadastro de Usuário / Configurações de Usuário</strong><br>
+  
+<img width="500" alt="cadastro e configs de users" src="https://github.com/user-attachments/assets/03794709-f314-410c-8076-809f74eb1f26" />
+</p>
+
+---
+
+<p align="center">
+<strong>Finalizar Reserva / Minhas Reservas</strong><br>
   
 <img width="500" alt="wireframes reservas2" src="https://github.com/user-attachments/assets/70ab5481-5a72-4642-b71d-0ebf05e7ba57">
 </p>
 
+---
 
+<p align="center">
+<strong>Cadastro de Hotéis</strong><br>
+  
+<img width="250" alt="Cadastro de Hotel" src="https://github.com/user-attachments/assets/3cc98289-68cc-4137-9a72-6e167acf2004" />
+</p>
+
+---
+
+<p align="center">
+<strong>Avaliações (Reviews)</strong><br>
+
+<img width="250" alt="Reviews" src="https://github.com/user-attachments/assets/47002bcd-1d3d-4bf5-9d73-a5a0dc320fda" />
+</p>
 
 ### Design Visual
 

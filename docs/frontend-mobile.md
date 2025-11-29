@@ -5,7 +5,14 @@
 O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **interface intuitiva e responsiva** que facilite a interação entre o usuário e os serviços hoteleiros em dispositivos **Android e iOS**. O sistema busca proporcionar uma **experiência fluida, segura e acessível**, permitindo que hóspedes realizem buscas, reservas e avaliações de hotéis de forma prática diretamente de seus smartphones.
 
 ## Projeto da Interface
-<ins>[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]</ins>
+
+~~[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]~~
+
+A interface móvel foi projetada para oferecer uma navegação simples, visualmente consistente e otimizada para dispositivos Android e iOS. **O layout segue princípios de design centrado no usuário**, priorizando clareza, acessibilidade e fluidez durante o uso.
+
+A navegação é organizada em abas inferiores e fluxos internos, permitindo fácil acesso às principais funcionalidades: página inicial, busca de hotéis, reservas e avaliações. **As telas utilizam componentes padronizados, como cards e botões destacados**, garantindo uniformidade visual e, consequentemente, melhor entendimento para o usuário.
+
+As interações foram desenvolvidas para serem intuitivas, com feedbacks visuais, validação de campos, etc. O objetivo é proporcionar uma experiência agradável, responsiva e eficiente em todas as etapas da jornada do usuário.
 
 ### Wireframes
 

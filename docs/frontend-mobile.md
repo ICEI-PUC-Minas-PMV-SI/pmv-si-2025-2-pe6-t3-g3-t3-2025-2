@@ -82,35 +82,33 @@ Principais **ícones** utilizados:
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
+
+1. **Documentação React Native**: https://reactnative.dev/docs/getting-started
+2. **Microfundamento: Desenvolvimento de Aplicações Móveis**: Aulas ministradas pelo Prof. Kleber Jacques Ferreira de Souza.
+3. **Documentação TailWind CSS**: https://v2.tailwindcss.com/docs
+4. **Repositório Mmar**: https://github.com/yusuf-musleh/mmar
+5. **Documentação FASTAPI**: https://fastapi.tiangolo.com/#typer-the-fastapi-of-clis
+6. **Documentação Python 3.13**: https://docs.python.org/pt-br/3/
+7. **Documentação PostgreeSQL**: https://www.postgresql.org/docs/current/index.html
 
 # Planejamento
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
-
-### Semana 1
-
-Atualizado em: 21/04/2024
+Atualizado em: 29/11/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
-
-#### Semana 2
-
-Atualizado em: 21/04/2024
-
-| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
-| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Victor Pereira, Gustavo Rossetti, Luiz Andrade, Matheus Fraga       | Documentação | 03/11/2025 | 30/11/2025 | ✔️ | 29/11/2025 |
+| Matheus Fraga        | Desenvolvimento da feature de Hotéis e Comodidades (versão mobile) | 03/11/2025 | 30/11/2025  | ✔️ | 23/11/2025 |
+| Luiz Andrade        | Desenvolvimento da feature de Usuários e Autenticação (versão mobile) | 03/11/2025 | 30/11/2025  | ✔️ | 23/11/2025 |
+| Gustavo Rossetti        | Desenvolvimento da feature de Avaliações (versão mobile)  |  03/11/2025 | 30/11/2025 | ✔️ | 23/11/2025 |
+| Victor Pereira       | Desenvolvimento da feature de Reservas (versão mobile)  | 03/11/2025 | 30/11/2025 | ✔️ | 23/11/2025 |
+| Matheus Fraga        | Testes da Feature de Hotéis e Comodidades (versão mobile)   | 24/11/2025 | 30/11/2025  | ✔️ | 29/11/2025 |
+| Luiz Andrade        | Testes da Feature de Usuários e Autenticação (versão mobile) | 24/11/2025 | 30/11/2025  | ✔️ | 29/11/2025 |
+| Gustavo Rossetti        | Testes da Feature de Avaliações (versão mobile)  | 24/11/2025 | 30/11/2025 | ✔️    | 29/11/2025 |
+| Victor Pereira       | Testes da Feature de Reservas (versão mobile)  | 24/11/2025 | 30/11/2025 | ✔️ | 29/11/2025 |
 
 Legenda:
 - ✔️: terminado

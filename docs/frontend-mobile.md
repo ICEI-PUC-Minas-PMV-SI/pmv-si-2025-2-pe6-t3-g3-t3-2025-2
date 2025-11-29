@@ -1,6 +1,6 @@
 # Front-end Móvel
 
-<ins>[Inclua uma breve descrição do projeto e seus objetivos.]</ins>
+~~[Inclua uma breve descrição do projeto e seus objetivos.]~~
 
 O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **interface intuitiva e responsiva** que facilite a interação entre o usuário e os serviços hoteleiros em dispositivos **Android e iOS**. O sistema busca proporcionar uma **experiência fluida, segura e acessível**, permitindo que hóspedes realizem buscas, reservas e avaliações de hotéis de forma prática diretamente de seus smartphones.
 
@@ -9,7 +9,7 @@ O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **inte
 
 ### Wireframes
 
-<ins>[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]</ins>
+~~[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]~~
 
 <p align="center">
 <strong>Finalizar Reserva / Minhas Reservas:</strong><br>
@@ -21,7 +21,7 @@ O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **inte
 
 ### Design Visual
 
-<ins>[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]</ins>
+~~[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]~~
 
 O design da aplicação móvel foi desenvolvido para oferecer uma experiência moderna, intuitiva e visualmente agradável em dispositivos móveis. Utilizando **React Native com Expo**, a interface segue princípios de design mobile-first, priorizando **usabilidade, performance e adaptação a diferentes tamanhos de tela**.
 
@@ -54,7 +54,23 @@ Principais **ícones** utilizados:
 
 ## Tecnologias Utilizadas
 
-<ins>[Lista das tecnologias principais que serão utilizadas no projeto.]</ins>
+~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
+
+**Frontend:** [React Native + Expo](https://docs.expo.dev/)  
+- Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.  
+- Facilita criação de interfaces responsivas e interativas.
+
+**Backend:** [FastAPI (Python)](https://fastapi.tiangolo.com/)  
+- Framework leve e moderno, com suporte nativo a APIs RESTful.  
+- Alta performance e facilidade de integração com bancos de dados e autenticação.  
+
+**Mock de sistema de pagamento:** [Beeceptor](https://beeceptor.com/docs/beeceptor-features/)  
+- Simula endpoints de pagamento para testes de integração.  
+- Permite desenvolvimento e validação do fluxo financeiro sem necessidade de transações reais.
+
+**Tunnel Mmar:** [Mmar](https://github.com/yusuf-musleh/mmar/blob/master/README.md) 
+- Plataforma sem dependência que expõe uma URL HTTPS a partir do seu localhost para testes envolvendo cookies.
+- Ocultação da porta usada pelo localhost.
 
 ## Considerações de Segurança
 

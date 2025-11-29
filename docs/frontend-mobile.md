@@ -1,12 +1,8 @@
 # Front-end Móvel
 
-~~[Inclua uma breve descrição do projeto e seus objetivos.]~~
-
 O Front-end Móvel da plataforma tem como principal objetivo oferecer uma **interface intuitiva e responsiva** que facilite a interação entre o usuário e os serviços hoteleiros em dispositivos **Android e iOS**. O sistema busca proporcionar uma **experiência fluida, segura e acessível**, permitindo que hóspedes realizem buscas, reservas e avaliações de hotéis de forma prática diretamente de seus smartphones.
 
 ## Projeto da Interface
-
-~~[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]~~
 
 A interface móvel foi projetada para oferecer uma navegação simples, visualmente consistente e otimizada para dispositivos Android e iOS. **O layout segue princípios de design centrado no usuário**, priorizando clareza, acessibilidade e fluidez durante o uso.
 
@@ -15,8 +11,6 @@ A navegação é organizada em abas inferiores e fluxos internos, permitindo fá
 As interações foram desenvolvidas para serem intuitivas, com feedbacks visuais, validação de campos, etc. O objetivo é proporcionar uma experiência agradável, responsiva e eficiente em todas as etapas da jornada do usuário.
 
 ### Wireframes
-
-~~[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]~~
 
 <p align="center">
 <strong>Página Inicial (deslogado) / Página Inicial (logado)</strong><br>
@@ -58,8 +52,6 @@ As interações foram desenvolvidas para serem intuitivas, com feedbacks visuais
 
 ### Design Visual
 
-~~[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]~~
-
 O design da aplicação móvel foi desenvolvido para oferecer uma experiência moderna, intuitiva e visualmente agradável em dispositivos móveis. Utilizando **React Native com Expo**, a interface segue princípios de design mobile-first, priorizando **usabilidade, performance e adaptação a diferentes tamanhos de tela**.
 
 A **paleta de cores** foi cuidadosamente selecionada para transmitir confiança, profissionalismo e destacar elementos interativos:
@@ -87,11 +79,23 @@ Principais **ícones** utilizados:
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+O diagrama de arquitetura abaixo foi desenvolvido com base no **estilo arquitetural baseado em serviços (SOA - Service-Oriented Architecture)**. Esse estilo foi escolhido para garantir:
+
+  - **Desacoplamento** entre módulos, facilitando alterações futuras.
+  - **Manutenabilidade**, permitindo atualização ou substituição de componentes sem afetar todo o sistema.
+  - **Extensibilidade**, possibilitando a inclusão de novos serviços conforme o crescimento do projeto.
+  - **Segurança e robustez**, assegurando que os dados dos usuários e transações sejam protegidos.
+  - **Experiência do usuário de qualidade**, com respostas rápidas e confiáveis.
+
+![diagrama de arquitetura](img/diagrams/solution-architecture.svg)
+
+  O sistema é dividido em três camadas principais:
+
+  1. **Frontend**: Responsável pela interface do usuário, interação e captura de dados.
+  2. **Backend**: Processamento das regras de negócio, gerenciamento de reservas, autenticação, pagamentos e serviços relacionados.
+  3. **Banco de Dados**: Armazenamento de informações persistentes, incluindo usuários, reservas, hotéis e transações.
 
 ## Tecnologias Utilizadas
-
-~~[Lista das tecnologias principais que serão utilizadas no projeto.]~~
 
 **Frontend:** [React Native + Expo](https://docs.expo.dev/)  
 - Permite desenvolvimento multiplataforma (iOS e Android) com uma única base de código.  
@@ -111,17 +115,149 @@ Principais **ícones** utilizados:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+A segurança é um aspecto essencial no desenvolvimento da plataforma de gestão hoteleira distribuída, especialmente por lidar com dados sensíveis de usuários, reservas e transações financeiras. As principais considerações de segurança adotadas no sistema incluem:
+
+1. **Autenticação e Autorização**:
+O acesso aos recursos protegidos da API é controlado por meio de tokens JWT (JSON Web Tokens) e Cookies. Cada usuário autenticado recebe um token que contém informações de identificação e permissões, garantindo que apenas usuários autorizados possam realizar operações específicas, como criação, edição ou exclusão de reservas e avaliações.
+
+2. **Criptografia de Senhas**:
+As senhas dos usuários são criptografadas utilizando a biblioteca bcrypt, implementada através do pacote Passlib, antes de serem armazenadas no banco de dados. Isso impede que senhas sejam lidas mesmo em caso de vazamento de dados.
+
+3. **Proteção de Rotas (Front-end + Backend)**
+Tanto o front-end quanto o backend implementam mecanismos que bloqueiam o acesso não autorizado a telas e endpoints protegidos. Esse mecanismo impede que usuários acessem páginas ou dados restritos, mesmo que tentem navegar diretamente por URL ou manipular o aplicativo.
+
+   - <ins>No Backend</ins>: Rotas críticas somente podem ser acessadas quando o token JWT é validado. Caso o token seja inválido ou expirado, a requisição é imediatamente rejeitada com código 401 (Unauthorized).
+   - <ins>No Front-end</ins>: Cada tela sensível (como Minhas Reservas, Finalizar Reserva e Avaliações) é protegida por middlewares/guards que verificam a existência de um token ativo. Usuários não autenticados são automaticamente redirecionados para a tela de login.
+
+4. **Proteção contra ataques comuns**:
+O sistema adota práticas de mitigação contra ataques frequentes em aplicações web:
+   - <ins>SQL Injection</ins>: as interações com o banco são realizadas via SQLAlchemy ORM, que abstrai as queries e evita injeções diretas.
+   - <ins>Cross-Site Scripting (XSS)</ins>: validações rigorosas nos campos de entrada, utilizando Pydantic, impedem a inserção de scripts maliciosos.
+
+5. **Comunicação Segura**:
+Todas as requisições devem trafegar sob o protocolo HTTPS, garantindo a criptografia ponta a ponta dos dados enviados e recebidos entre clientes e servidores.
+
+6. **Logs e Monitoramento**:
+A API mantém registros de ações críticas, como tentativas de login, criação e cancelamento de reservas, e exclusões de dados. Isso permite rastrear atividades suspeitas e auditar o comportamento dos usuários e administradores.
+
+7. **Controle de Acesso e Permissões**:
+Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias reservas e avaliações), enquanto administradores possuem privilégios adicionais, como gerenciar hotéis e quartos. Essa separação garante o princípio do menor privilégio.
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+A implantação da aplicação envolve a preparação do ambiente backend, configuração do app mobile e disponibilização do sistema para testes ou produção. Como o frontend é desenvolvido em **React Native com Expo**, o processo inclui também o uso do Expo Go e do QR Code gerado pelo Expo CLI para facilitar execução e validação em dispositivos móveis.
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+### 1. Requisitos de Hardware e Software
+- Hardware mínimo para o servidor (Backend):
+  - CPU: 2 vCPUs
+  - Memória RAM: 4 GB
+  - Armazenamento: 20 GB SSD
+  - Conectividade: acesso à internet estável, com as portas 8000 (API) e 5432 (PostgreSQL) liberadas
+
+- Software necessário no servidor:
+  - Sistema operacional: Ubuntu Server 22.04 LTS (ou equivalente Linux)
+  - Python: versão 3.13 ou superior
+  - PostgreSQL: versão 15 ou superior
+  - Git: controle de versão e integração contínua
+  - MMAR: utilizado apenas em ambiente de desenvolvimento para expor o servidor local publicamente e facilitar testes com o frontend.
+ 
+- No Frontend (máquina do desenvolvedor):
+  - Node.js 18+
+  - Expo CLI
+  - Expo Go (instalado no smartphone Android/iOS)
+
+***
+
+### 2. Plataforma de Hospedagem
+
+Pode ser implantado em plataformas como:
+  - Render
+  - Railway
+  - AWS
+  - Google Cloud
+  - DigitalOcean
+  - Azure
+  - Para ambientes de teste ou projetos menores, um VPS simples é suficiente.
+  - O frontend mobile não é hospedado como um site — ele é executado via Expo Go durante desenvolvimento e pode ser distribuído via build (APK, AAB ou IPA) caso necessário.
+
+***
+
+### 3.1 Configuração do Ambiente Backend
+
+  - Clonar o repositório:
+    
+  `git clone https://github.com/matheusfraga-tech/aluga-api-backend.git`
+  
+  `cd aluga-api-backend`
+
+  - Configurar variáveis de ambiente:
+  Crie um arquivo .env na raiz do projeto com os dados de conexão:
+
+`DATABASE_URL=postgresql+psycopg2://usuario:senha@localhost:5432/nome_do_banco`
+
+`SECRET_KEY=sua_chave_secreta`
+
+`EXPO_PUBLIC_API_URL=https://sua-api-em-producao.com`
+
+  - Instalar dependências:
+
+`python -m venv .venv`
+
+`source .venv/bin/activate`
+
+`pip install -r requirements.txt`
+
+### 3.2 Configuração do Ambiente Frontend
+
+  - Clonar o repositório:
+    
+  `git clone https://github.com/Andradev101/aluga-api-frontend.git`
+  
+  `cd aluga-api-frontend`
+
+***
+
+### 4. Deploy da Aplicação
+
+**Backend (FastAPI)**
+
+- Fazer o build e iniciar o servidor Uvicorn com:
+
+   `fastapi dev app/main.py`
+  
+*O servidor Uvicorn executará a aplicação na porta 8000.*
+
+**MMAR**:
+
+- Rode o MMAR através do seguinte comando no CMD:
+`mmar.exe client --local-port 8000`
+
+**Frontend (Expo / React Native)**
+
+Certifique-se de configurar:
+  - .env com: EXPO_PUBLIC_API_URL="link gerado no MMAR"
+
+Inicie o app localmente:
+
+`npm install`
+
+e depois
+
+`npx expo start`
+
+*O Expo CLI abrirá o painel no navegador, permitindo rodar o app no Android Emulator, iOS Simulator ou Expo Go (via QR Code).*
+
+***
+
+### 5. Testes Pós-Implantação
+
+**Testando no Celular com Expo Go (via QR Code)**
+
+1. Instale o app Expo Go no smartphone (Android ou iOS).
+2. Com o Expo CLI rodando, a página exibirá um QR Code.
+3. No Android: basta abrir a câmera ou o próprio Expo Go e escanear o QR Code.
+4. No iOS: o leitor de QR Code da câmera pode ser usado diretamente.
+5. O Expo Go carregará o app imediatamente, consumindo a API configurada em EXPO_PUBLIC_API_URL.
 
 ## Testes
 
@@ -134,8 +270,6 @@ Principais **ícones** utilizados:
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 # Referências
-
-~~Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.~~
 
 1. **Documentação React Native**: https://reactnative.dev/docs/getting-started
 2. **Microfundamento: Desenvolvimento de Aplicações Móveis**: Aulas ministradas pelo Prof. Kleber Jacques Ferreira de Souza.

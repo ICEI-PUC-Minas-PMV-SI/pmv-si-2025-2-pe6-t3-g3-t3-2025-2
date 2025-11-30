@@ -79,6 +79,40 @@ Principais **ícones** utilizados:
 
 ## Fluxo de Dados
 
+O projeto da interface foi elaborado com foco em **usabilidade e experiência do usuário (UX)**, seguindo boas práticas de design responsivo e interatividade. A aplicação foi dividida em módulos visuais correspondentes aos principais fluxos do sistema:
+
+1. **Página Inicial (Home)**:
+- Exibe uma barra de pesquisa com filtros de destino, datas e quantidade de hóspedes.
+- Mostra seções com destaques, hotéis recomendados e promoções em destaque.
+- Inclui um rodapé com links institucionais e informações de contato.
+
+2. **Página de Resultados de Busca**:
+- Lista os hotéis filtrados conforme os critérios do usuário.
+- Cada item da lista mostra nome, imagem, preço, avaliação e botão “Ver Detalhes”.
+- Filtros laterais permitem refinar a busca (por preço, avaliação, comodidades etc.).
+
+3. **Página de Detalhes do Hotel**:
+- Descrição completa, tipo de quartos disponíveis e avaliações de outros usuários.
+- Contém botões de ação como “Reservar Agora”.
+
+4. **Página de Reserva**:
+- Mostra os detalhes do quarto selecionado, datas da estadia e valor total.
+- Permite ao usuário confirmar a reserva e selecionar o método de pagamento.
+- Inclui mensagens de sucesso e redirecionamento após conclusão.
+
+5. **Página de Avaliações de Hotéis**:
+- Sistema CRUD completo para avaliações (buscar, criar, editar e excluir)
+- Componente de Rating interativo com as estrelas (1 a 5)
+- Filtro por hotel ou ver todas as avaliações
+- Usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
+
+6. **Área do Usuário (Dashboard)**:
+- Exibe as reservas ativas e passadas do usuário.
+- Permite editar dados pessoais, cancelar reservas e enviar avaliações.
+- Possui controle de autenticação via JWT para proteger as informações.
+
+
+
 O diagrama de arquitetura abaixo foi desenvolvido com base no **estilo arquitetural baseado em serviços (SOA - Service-Oriented Architecture)**. Esse estilo foi escolhido para garantir:
 
   - **Desacoplamento** entre módulos, facilitando alterações futuras.

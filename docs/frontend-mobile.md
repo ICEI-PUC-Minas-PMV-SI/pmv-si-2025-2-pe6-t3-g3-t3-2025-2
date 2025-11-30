@@ -475,13 +475,14 @@ e depois
 
 - O usuário logado e autenticado deve **selecionar a aba de Avaliações** no canto inferior da página inicial.
 - Na tela seguinte, deve escolher a avaliação que deseja editar.
-
+- Em seguida, o usuário pode alterar o que desejar.
+- Depois ele deve clicar em **Update**.
 
 **Evidências**:
 
-<img width="400" alt="reserva3" src="https://github.com/user-attachments/assets/a42f29d6-91f4-47a1-9759-0eb708632e71" />
+<img width="1000" alt="avaliacao3" src="https://github.com/user-attachments/assets/370c59ec-16a4-498f-9a74-0c2e48dc8ed2" />
 
-<img width="1000" alt="reserva4" src="https://github.com/user-attachments/assets/73f9bcd0-2532-4586-9422-e06e4ed35d4d" />
+<img width="1000" alt="avaliacao4" src="https://github.com/user-attachments/assets/bd6b8cf1-60b4-428b-9ac3-e512410baf81" />
 
 </details>
 
@@ -493,10 +494,13 @@ e depois
 - O usuário logado e autenticado deve **selecionar a aba de Avaliações** no canto inferior da página inicial.
 - Na tela seguinte, deve escolher a avaliação que deseja deletar.
 - Em seguida, deve clicar em **Delete**.
+- A avaliação desaparecerá e a página de Minhas Avaliações será carregada sem ela.
 
 **Evidências**:
 
-<img width="400" alt="reserva5" src="https://github.com/user-attachments/assets/4b8f9a3f-b791-4cbe-8100-44aa12303cdb" />
+<img width="1000" alt="avaliacao5" src="https://github.com/user-attachments/assets/f07cbe63-0ca5-4f95-80ee-01ebcd4557e8" />
+
+<img width="1000" alt="avaliacao6" src="https://github.com/user-attachments/assets/24bf9428-6171-400e-a191-334c938f2af7" />
 
 </details>
 
@@ -505,7 +509,7 @@ e depois
 <br>
 
 <details>
-<summary><strong>🏨 TESTES DE CADASTRAR HOTÉIS</strong></summary>
+<summary><strong>🏨 TESTES DE CADASTRO DE HOTÉIS</strong></summary>
 
 <br>
 
@@ -514,13 +518,17 @@ e depois
 
 <br>
 
-- O usuário logado e autenticado deve **selecionar a aba de Avaliações** no canto inferior da página inicial.
+- O usuário logado e autenticado deve **selecionar a aba Perfil** no canto inferior da página inicial.
+- Deve selecionar a opção **Cadastrar Novo Hotel** na parte de Ações Administrativas.
+- Na tela seguinte, deve preencher as informações do Hotel a ser cadastrado. Todas com asteriscos são obrigatórias.
+- Após o preenchimento, o usuário clica em **Cadastrar Hotel no Catálogo**.
+- O hotel é cadastrado e é possível buscá-lo na lista com os demais.
 
 **Evidências**:
 
-<img width="1000" alt="hoteis1" src="" />
+<img width="1000" alt="hoteis1" src="https://github.com/user-attachments/assets/4c3732a2-7190-466b-a9ed-ae3b56a0143e" />
 
-<img width="1000" alt="hoteis2" src="https://github.com/user-attachments/assets/c1a2f247-2d71-4f05-a32a-fd432e4e3ac1" />
+<img width="1000" alt="hoteis2" src="https://github.com/user-attachments/assets/3071f4e2-a397-4d8b-9880-b8c0f24389fe" />
 
 </details>
 
@@ -529,8 +537,9 @@ e depois
 
 <br>
 
-- O usuário logado e autenticado deve **selecionar a aba de Avaliações** no canto inferior da página inicial.
-
+- O usuário logado e autenticado deve **selecionar a aba Perfil** no canto inferior da página inicial.
+- Deve selecionar a opção **Cadastrar Novo Hotel** na parte de Ações Administrativas.
+- Na tela seguinte, deve preencher as informações do Hotel a ser cadastrado. Caso alguma informação obrigatória esteja faltando, o cadastro não é realizado.
 
 **Evidências**:
 

@@ -82,14 +82,14 @@ Principais **ícones** utilizados:
 O projeto da interface foi elaborado com foco em **usabilidade e experiência do usuário (UX)**, seguindo boas práticas de design responsivo e interatividade. A aplicação foi dividida em módulos visuais correspondentes aos principais fluxos do sistema:
 
 1. **Página Inicial (Home)**:
-- Exibe uma barra de pesquisa com filtros de destino, datas e quantidade de hóspedes.
-- Mostra seções com destaques, hotéis recomendados e promoções em destaque.
-- Inclui um rodapé com links institucionais e informações de contato.
+- Exibe uma barra de pesquisa com filtros de preço e avaliações.
+- Mostra seções com destaques e hotéis recomendados.
+- Inclui um rodapé com links para navegar na aplicação.
 
 2. **Página de Resultados de Busca**:
 - Lista os hotéis filtrados conforme os critérios do usuário.
 - Cada item da lista mostra nome, imagem, preço, avaliação e botão “Ver Detalhes”.
-- Filtros laterais permitem refinar a busca (por preço, avaliação, comodidades etc.).
+- Filtros laterais permitem refinar a busca (por preço e avaliação).
 
 3. **Página de Detalhes do Hotel**:
 - Descrição completa, tipo de quartos disponíveis e avaliações de outros usuários.
@@ -104,7 +104,7 @@ O projeto da interface foi elaborado com foco em **usabilidade e experiência do
 - Sistema CRUD completo para avaliações (buscar, criar, editar e excluir)
 - Componente de Rating interativo com as estrelas (1 a 5)
 - Filtro por hotel ou ver todas as avaliações
-- Usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma
+- Usuários podem editar suas próprias avaliações, admins podem excluir qualquer uma.
 
 6. **Área do Usuário (Dashboard)**:
 - Exibe as reservas ativas e passadas do usuário.

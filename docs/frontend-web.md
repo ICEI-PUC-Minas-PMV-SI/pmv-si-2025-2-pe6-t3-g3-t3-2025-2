@@ -285,6 +285,7 @@ Teste:
 
 <br>
 
+- Na página inicial, clicar em <strong>Sign Up</strong>.
 - Todos os campos devem estar preenchidos, caso contrário aparecerão avisos.
 - O usuário deve selecionar uma data de nascimento que seja correspondente a uma pessoa maior de 18 anos, caso contrário, aparecerá um aviso.
 - O usuário deve preencher um email corretamente, caso contrário, aparecerá um aviso.
@@ -299,6 +300,131 @@ Teste:
 <img width="200" alt="registro5" src="https://github.com/user-attachments/assets/e4dbde4b-54ae-4ad9-a81b-187ed1a8e45e" />
 
 <img width="200" alt="registro6" src="https://github.com/user-attachments/assets/2e1e8588-49b6-4d9d-bac2-4699f2d1beb6" />
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>🔑 TESTES DE LOGIN</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>✅ Login com informações válidas</strong></summary>
+
+<br>
+
+- Na página inicial, navegando até a parte de **Login**.
+- O usuário preenche o seu username criado corretamente.
+- O usuário preenche a sua senha escolhida para o username corretamente.
+- O usuário clica no botão de **Login**.
+- Ele é redirecionado para a página inicial da aplicação.
+
+
+**Evidências**:
+
+![login1](https://github.com/user-attachments/assets/cfcddc97-9546-420a-9f86-15d3e1d66392)
+
+<img width="800" alt="login1" src="https://github.com/user-attachments/assets/717a6406-d4b7-499f-b8c4-ac9f2074116b" />
+
+
+</details>
+
+<details>
+<summary><strong>❌ Login com informações inválidas</strong></summary>
+
+<br>
+
+- Na página inicial, navegando até a parte de Login.
+- O usuário preenche um username que não existe.
+- O usuário preenche a senha incorretamente.
+- O usuário clica no botão de **Login**.
+- Um aviso em vermelho aparece indicando o erro.
+
+
+**Evidências**:
+
+<img width="400" alt="loginerro1" src="https://github.com/user-attachments/assets/b14e5428-c2f9-4135-ae9c-d54e8cfdcd8d" />
+
+<img width="390" alt="loginerro2" src="https://github.com/user-attachments/assets/1600485e-d5a0-4054-a74a-30b350d6772e" />
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>🛏️ TESTES DE RESERVA</strong></summary>
+
+<br>
+
+<details>
+<summary><strong>📱 Reserva via PIX</strong></summary>
+
+<br>
+
+- O usuário logado e autenticado deve **selecionar um dos hotéis** a partir da busca.
+- Na tela seguinte, deve clicar no botão **Reservar Agora**.
+- Na tela seguinte, ele deve escolher o **tipo do quarto** que deseja.
+- Em seguida, selecionar as **datas da estadia**.
+- Depois disso, escolher o **método de pagamento PIX**.
+- Marcar que leu e aceita os **Termos e Condições**.
+- Clicar em **Confirmar Reserva**.
+- Ele será redirecionado para uma tela informando que a Reserva foi Confirmada e com os Detalhes da Reserva.
+
+
+**Evidências**:
+
+<img width="400" alt="reserva1" src="https://github.com/user-attachments/assets/6122e782-9281-4b58-8095-61bfb53680e9" />
+
+<img width="1000" alt="reserva2" src="https://github.com/user-attachments/assets/7b5d9925-1bee-4c3f-8e2e-e68abff65c3d" />
+
+</details>
+
+<details>
+<summary><strong>💳 Reserva via Cartão de Crédito/Débito</strong></summary>
+
+<br>
+
+- O usuário logado e autenticado deve **selecionar um dos hotéis** a partir da busca.
+- Na tela seguinte, deve clicar no botão **Reservar Agora**.
+- Na tela seguinte, ele deve escolher o **tipo do quarto** que deseja.
+- Em seguida, selecionar as **datas da estadia**.
+- Depois disso, escolher o **método de pagamento Cartão de Crédito/Débito**.
+- Preencher corretamente o número do cartão, nome no cartão, data de validade e CVV.
+- Marcar que leu e aceita os **Termos e Condições**.
+- Clicar em **Confirmar Reserva**.
+- Ele será redirecionado para uma tela informando que a Reserva foi Confirmada e com os Detalhes da Reserva.
+
+
+**Evidências**:
+
+<img width="400" alt="reserva3" src="https://github.com/user-attachments/assets/a42f29d6-91f4-47a1-9759-0eb708632e71" />
+
+<img width="1000" alt="reserva4" src="https://github.com/user-attachments/assets/73f9bcd0-2532-4586-9422-e06e4ed35d4d" />
+
+</details>
+
+<details>
+<summary><strong>❌ Reserva com Informações Incorretas</strong></summary>
+
+<br>
+
+- O usuário logado e autenticado deve **selecionar um dos hotéis** a partir da busca.
+- Na tela seguinte, deve clicar no botão **Reservar Agora**.
+- Na tela de finalizar reserva, o usuário deve obrigatoriamente selecionar um quarto disponível, caso contrário avisos aparecerão.
+- O usuário deve, obrigatoriamente, selecionar uma data válida, caso contrário avisos aparecerão.
+- O usuário também deve, obrigatoriamente, preencher os campos do cartão, caso seja o modelo escolhido. Caso contrário, a reserva não é efetuada.
+- O usuário deve declarar que leu os Termos e Condições, caso contrário, o botão de Confirmar fica desabilitado.
+
+
+**Evidências**:
+
+<img width="400" alt="reserva5" src="https://github.com/user-attachments/assets/4b8f9a3f-b791-4cbe-8100-44aa12303cdb" />
 
 </details>
 

@@ -154,14 +154,6 @@ Usuários comuns têm acesso apenas aos recursos pessoais (como suas próprias r
 
 ## Implantação
 
-~~[Instruções para implantar a aplicação distribuída em um ambiente de produção.]~~
-
-~~1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.~~
-
 A implantação da aplicação distribuída envolve a preparação do ambiente de produção, configuração de dependências e disponibilização dos serviços backend e frontend para uso público. A seguir, são descritas as etapas necessárias para o deploy completo do sistema.
 
 
@@ -259,53 +251,59 @@ Teste:
 
 ## Testes
 
+<details>
+<summary><strong>🔐 TESTES DE REGISTRO</strong></summary>
 
-- **Feature Usuários**
-  
--*RF-003: Facilitar o cadastro de usuários com dados pessoais válidos.*
-  
--*RF-004: Garantir idade mínima de 18 anos no cadastro.*
+<br>
 
--*RF-005: Validar complexidade mínima de senhas.*
-  
--*RF-006: Validar e-mail e número de celular durante o cadastro.*
+<details>
+<summary><strong>✅ Registro com informações válidas</strong></summary>
 
-<img width="800" alt="TesteUsarios" src="https://github.com/user-attachments/assets/99493865-d18c-405d-8cc0-366322246629" />
+<br>
 
----
+- Na página inicial, clicar em <strong>Sign Up</strong>.
+- Preencher um nome de usuário que não exista ainda.
+- Preencher uma senha com, no mínimo 8 caracteres, devendo incluir uma letra, um número e um símbolo.
+- Selecionar uma data de nascimento que seja correspondente a uma pessoa maior de 18 anos.
+- Preencher um email válido.
+- Digitar um número de telefone válido.
+- Preencher um nome.
+- Preencher um sobrenome.
+- Preencher um endereço.
 
+**Evidências**:
 
-- **Feature Hotéis**
+<img width="200" alt="registro1" src="https://github.com/user-attachments/assets/8f8bbee8-03ac-4772-aca3-f317e92bcbb5" />
 
-- *RF-012a: Permitir o cadastro de um novo hotel com informações básicas.*
-
-- RF-012d: Permitir a listagem de todos os hotéis cadastrados, com suporte a filtros e paginação.
-
-<img width="800" alt="TesteUsarios" src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe6-t3-g3-t3-2025-2/blob/088c917737f0de3dd3913934d9c29fd9282ee37e/docs/img/Captura%20de%20tela%202025-11-02%20191952.png" />
-
----
-
-- **Feature Reservas**
-  
-  -*RF-001:	Permitir que o usuário realize reservas de um ou mais quartos.*
-  
-  -*RF-002:	Integrar meios de pagamento (simulado ou real).*
-
-<img width="800" alt="TesteReservas" src="https://github.com/user-attachments/assets/22b03a80-3b17-48b1-a053-6d324e75fab7" />
+<img alt="registro2" src="https://github.com/user-attachments/assets/0b10e6f0-f306-4423-8aa4-7576ddc4f791" />
 
 
-<img width="800" alt="TesteReservas2" src="https://github.com/user-attachments/assets/9cc73109-0645-4b9d-b4f5-9513fcd9519e" />
+</details>
 
+<details>
+<summary><strong>❌ Registro com informações inválidas</strong></summary>
 
-<img width="800" alt="TesteReservas3" src="https://github.com/user-attachments/assets/8d8c650e-1a24-43a0-a831-1652d2de0ba4" />
+<br>
 
----
+- Todos os campos devem estar preenchidos, caso contrário aparecerão avisos.
+- O usuário deve selecionar uma data de nascimento que seja correspondente a uma pessoa maior de 18 anos, caso contrário, aparecerá um aviso.
+- O usuário deve preencher um email corretamente, caso contrário, aparecerá um aviso.
+- O usuário deve preencher um número de telefone válido, caso contrário, aparecerá um aviso.
 
-- **Feature Reviews**
-  
--*RF-011: Permitir avaliação da estadia pelos hóspedes, registrando feedbacks.*
-  
-<img width="800" alt="TesteReviews" src="https://github.com/user-attachments/assets/45272358-2047-42a8-86c8-42f168a22160" />
+**Evidências**:
+
+<img width="200" alt="registro3" src="https://github.com/user-attachments/assets/a1f711d4-a965-4cc2-bdf6-8166f3c6824f" />
+
+<img width="200" alt="registro4" src="https://github.com/user-attachments/assets/042090d2-661c-4bc7-b62a-4663feaf0994" />
+
+<img width="200" alt="registro5" src="https://github.com/user-attachments/assets/e4dbde4b-54ae-4ad9-a81b-187ed1a8e45e" />
+
+<img width="200" alt="registro6" src="https://github.com/user-attachments/assets/2e1e8588-49b6-4d9d-bac2-4699f2d1beb6" />
+
+</details>
+
+</details>
+
 
 # Referências
 

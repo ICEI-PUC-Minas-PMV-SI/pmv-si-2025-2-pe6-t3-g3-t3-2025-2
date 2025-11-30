@@ -540,9 +540,12 @@ e depois
 
 **Evidências**:
 
-<img width="1000" alt="hoteis1" src="https://github.com/user-attachments/assets/4c3732a2-7190-466b-a9ed-ae3b56a0143e" />
+<img width="384" height="833" alt="Screenshot 2025-11-30 191022" src="https://github.com/user-attachments/assets/590191d1-da2a-414b-92da-249535a835bf" />
 
-<img width="1000" alt="hoteis2" src="https://github.com/user-attachments/assets/3071f4e2-a397-4d8b-9880-b8c0f24389fe" />
+<img width="381" height="832" alt="Screenshot 2025-11-30 191040" src="https://github.com/user-attachments/assets/661fdf31-6e77-469d-8e23-497842c726e5" />
+
+<img width="385" height="825" alt="image" src="https://github.com/user-attachments/assets/8bb148e1-fb39-4fc2-9fe5-b8b271994348" />
+
 
 </details>
 
@@ -557,9 +560,9 @@ e depois
 
 **Evidências**:
 
-<img width="400" alt="hoteis3" src="" />
+<img width="385" height="770" alt="Screenshot 2025-11-30 192247" src="https://github.com/user-attachments/assets/4435a288-f8fc-4cd2-a959-8390cd554516" />
 
-<img width="1000" alt="hoteis4" src="" />
+<img width="383" height="767" alt="Screenshot 2025-11-30 192312" src="https://github.com/user-attachments/assets/f2aa3197-9e74-4cd2-8f6a-f76fe79d88e2" />
 
 </details>
 

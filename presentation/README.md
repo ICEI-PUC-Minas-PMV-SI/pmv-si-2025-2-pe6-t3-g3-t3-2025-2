@@ -12,6 +12,11 @@
   <img width="100%" alt="slide5" src="https://github.com/user-attachments/assets/e698c685-f16c-424d-bda5-63a300f31f1c" />
 </details>
 
+<details>
+  <summary>PDF da apresentação</summary>  
+https://github.com/user-attachments/files/24003784/PUC.-.Apresentacao.Final.pdf
+</details>
+
 ## Demos
 Esta seção é dedicada às demonstrações tanto da versão web da aplicação, quanto de seu artefato compilado para dispositivos mobile.
 ### Demonstração Web

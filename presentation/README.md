@@ -1,6 +1,13 @@
 # Apresentação da Solução
 
-~~Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.~~
+O desenvolvimento da plataforma de reservas hoteleiras foi conduzido inicialmente com uma estrutura de equipe baseada na divisão por *features*.
+
+Para uma análise detalhada da arquitetura, tecnologias e a crítica do processo de desenvolvimento, acesse as seções abaixo:
+
+🔗 **Detalhes do Projeto e Próximos Passos:**
+
+* **[Considerações Finais e Propostas de Arquitetura](#-análise-e-propostas-de-melhoria-na-arquitetura)**
+* **[Análise Crítica do Processo de Desenvolvimento](#-análise-crítica-e-proposta-de-melhorias-no-processo-de-desenvolvimento)**
 
 ## Slides de apresentação
 <details>

@@ -6,8 +6,8 @@ Para uma análise detalhada da arquitetura, tecnologias e a crítica do processo
 
 🔗 **Detalhes do Projeto e Próximos Passos:**
 
-* **[Considerações Finais e Propostas de Arquitetura](#-análise-e-propostas-de-melhoria-na-arquitetura)**
-* **[Análise Crítica do Processo de Desenvolvimento](#-análise-crítica-e-proposta-de-melhorias-no-processo-de-desenvolvimento)**
+* **[Considerações Finais e Propostas de Arquitetura](../docs/consideracoes-finais.md)**
+* **[Análise Crítica do Processo de Desenvolvimento](../docs/Análise%20Crítica%20e%20Proposta%20de%20Melhorias%20no%20Processo%20de%20Análise%20e%20Desenvolvimento.md)**
 
 ## Slides de apresentação
 <details>
